@@ -1,0 +1,23 @@
+extends ../_template
+
+block variables
+  - var title       = 'Odinokun`s start template'
+  - var description = 'Odinokun`s start template'
+  - var ogtitle     = 'Odinokun`s start template'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Odinokun`s start template'
+  - var breadcrumbs     = 'breadcrumbs'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header
+
+    //begin content
+    main.main.index
+      .container
+        div.alert.alert-primary(role="alert") A simple primary alert—check it out!
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
