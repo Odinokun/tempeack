@@ -5,6 +5,7 @@
 @import 'core/bootstrap-update';
 
 //elements
+@import 'elements/person-card';
 //@import 'elements/breadcrumbs';
 //@import 'elements/pagination';
 //@import 'elements/popup';
@@ -14,6 +15,8 @@
 //section
 @import 'sections/header';
 @import 'sections/footer';
+@import 'sections/page-header';
 
 //pages
 @import 'pages/index';
+@import 'pages/results';

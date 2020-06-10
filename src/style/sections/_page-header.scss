@@ -1,0 +1,59 @@
+.page-header {
+  margin-bottom: 16px;
+  padding-top: 90px;
+
+  @include max(980) {
+    margin-bottom: 0;
+    padding-top: 22px;
+  }
+  .container-inn {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-header__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 13px;
+  flex: none;
+  height: 24px;
+  margin: auto;
+  padding: 0 25px;
+
+  @include max(980) {
+    height: 16px;
+    padding: 0 16px 0 0;
+  }
+  &:hover {
+    svg {
+      fill: $link-hov;
+    }
+  }
+  svg {
+    fill: #4a4a4a;
+    width: 24px;
+    height: 24px;
+    transition: fill .5s;
+
+    @include max(980) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.page-header__title {
+  font-family: $font;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-left: 95px;
+  color: #000;
+
+  @include max(980) {
+    margin-left: 32px;
+  }
+}

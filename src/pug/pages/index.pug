@@ -6,6 +6,8 @@ block variables
   - var ogtitle     = 'Tempeak'
   - var ogimage     = 'assets/img/social.jpg'
 
+  - var pageHeaderTitle = 'Let\'s Find'
+
 block content
   .main-wrap.no-js
     include ../sections/header
@@ -15,7 +17,7 @@ block content
       .container.container-inn
         //begin index__left
         .index__left.index-left
-          h2.index-left__title Let's Find
+          h2.index-left__title #{pageHeaderTitle}
           //begin index-left__form
           form.index-left__form.index-left-form
             //begin form-group
