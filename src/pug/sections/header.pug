@@ -1,33 +1,33 @@
 //begin header
 header.header
   .container.container-inn
-      a(href="/").header__logo
-        img(src="assets/img/logo.svg" alt="Tempeak")
+    a(href="/").header__logo
+      img(src="assets/img/logo.svg" alt="Tempeak")
 
-      //begin header__mobile-menu-wrap
-      .header__mobile-menu-wrap#header__mobile-menu-wrap
-        .header__burger.burger-close#burger-close
-          +svg('burger-close')
+    //begin header__mobile-menu-wrap
+    .header__mobile-menu-wrap#header__mobile-menu-wrap
+      .header__burger.burger-close#burger-close
+        +svg('burger-close')
 
-        //begin menu.header__menu
-        nav.menu.header__menu
-          ul.menu__list.nav
-            li.nav-item.menu__item
-              a(href="#").nav-link.menu__link About
-            li.nav-item.menu__item
-              a(href="#").nav-link.menu__link How it Works
-            li.nav-item.menu__item
-              a(href="#").nav-link.menu__link Pricing
-            li.nav-item.menu__item
-              a(href="#").nav-link.menu__link Contact
-        //end menu.header__menu
+      //begin menu.header__menu
+      nav.menu.header__menu
+        ul.menu__list.nav
+          li.nav-item.menu__item
+            a(href="#").nav-link.menu__link About
+          li.nav-item.menu__item
+            a(href="#").nav-link.menu__link How it Works
+          li.nav-item.menu__item
+            a(href="#").nav-link.menu__link Pricing
+          li.nav-item.menu__item
+            a(href="#").nav-link.menu__link Contact
+      //end menu.header__menu
 
-        button.button.button--log-in
-          +svg('person')
-          span Log in
-        button.button.button--grey Sign up
-      //end header__mobile-menu-wrap
+      button.button.button--log-in
+        +svg('person')
+        span Log in
+      button.button.button--grey Sign up
+    //end header__mobile-menu-wrap
 
-      .header__burger.burger-open#burger-open
-        +svg('burger')
+    .header__burger.burger-open#burger-open
+      +svg('burger')
 //end header

@@ -47,6 +47,7 @@ a {
   text-decoration: none;
   color: $link;
   &:hover {
+  text-decoration: none;
     color: $link-hov;
   }
 }
