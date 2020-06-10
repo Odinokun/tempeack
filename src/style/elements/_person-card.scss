@@ -1,0 +1,100 @@
+.person-card {
+  display: flex;
+  align-items: center;
+  max-width: 938px;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-bottom: 1px solid #ebebeb;
+
+  @include max(980) {
+    max-width: 100%;
+  }
+}
+
+.person-card__ava {
+  overflow: hidden;
+  flex: none;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #ededed;
+  border-radius: 50%;
+
+  @include max(980) {
+    width: 70px;
+    height: 70px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.person-card__info {
+  flex: 1;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  @include max(980) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.person-card__name {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  color: #000;
+
+  @include max(980) {
+    font-size: 16px;
+  }
+}
+
+.person-card__position {
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  color: #000;
+
+  @include max(980) {
+    font-size: 14px;
+  }
+}
+
+.person-card__button {
+  .button {
+    padding-right: 17px;
+    padding-left: 17px;
+
+    @include max(980) {
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border-radius: 50% !important;
+    }
+    span {
+      font-size: 20px;
+
+      @include max(980) {
+        display: none;
+      }
+    }
+    svg {
+      flex: none;
+      fill: #fff;
+      width: 16px;
+      height: 11px;
+      margin-left: 18px;
+
+      @include max(980) {
+        margin: 0;
+      }
+    }
+  }
+}

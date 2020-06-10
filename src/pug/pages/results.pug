@@ -1,0 +1,23 @@
+extends ../_template
+
+block variables
+  - var title       = 'Results | Tempeak'
+  - var description = 'Results | Tempeak'
+  - var ogtitle     = 'Results | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Results'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header
+    include ../sections/page-header-arrow
+
+    //begin content
+    main.main.results
+      .container.container-inn
+        include ../elements/person-card-01
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
