@@ -1,0 +1,55 @@
+.form-control:focus {
+  border: 1px solid $link-hov;
+  box-shadow: none;
+}
+
+.form-group--select {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    bottom: 0;
+    width: 10px;
+    height: 0;
+    margin: auto;
+    content: '';
+    pointer-events: none;
+    border-top: 5px solid #000;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+  .form-control {
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    option{
+      font-size: 16px;
+      color: #000;
+      padding-left: 5px !important;
+    }
+  }
+}
+
+.form-control {
+
+  height: 48px;
+  padding-right: 40px;
+  padding-left: 45px;
+  border: 1px solid #d4d4d4;
+  border-radius: 25px !important;
+}
+
+.form-group__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 23px;
+  width: 17px;
+  height: 17px;
+  margin: auto;
+  svg {
+    width: 17px;
+    height: 17px;
+  }
+}

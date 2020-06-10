@@ -11,7 +11,49 @@ block content
     include ../sections/header
 
     //begin content
-    main.main
+    main.main.index
+      .container.container-inn
+        //begin index__left
+        .index__left.index-left
+          h2.index-left__title Let's Find
+          //begin index-left__form
+          form.index-left__form.index-left-form
+            //begin form-group
+            .form-group.form-group--select
+              .form-group__icon
+                +svg('hospital')
+              select.form-control.selectpicker
+                option(value='') Clinical Staff
+                option(value='') Clinical Staff 1
+                option(value='') Clinical Staff 2
+                option(value='') Clinical Staff 3
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--select
+              .form-group__icon
+                +svg('marker')
+              select.form-control
+                option(value='') State
+                option(value='') State 1
+                option(value='') State 2
+                option(value='') State 3
+            //end form-group
+            button.button.button--highlight.button--lg Find
+          //end index-left__form
+        //end index__left
+
+        //begin index__right
+        .index__right.index-right
+          p Over 100,000 dental practices in US and each one of them are looking for temp staff
+          p Unlike traditional staffing agencies, we connect you directly with dental professionals!
+          .index-right__sign-up
+            span.index-right__sign-up-text New user?
+            button.button.index-right__sign-up-btn
+              span Sign up
+              +svg('arr-right')
+
+        //end index__right
     //end content
 
     include ../sections/footer
