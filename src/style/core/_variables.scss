@@ -1,14 +1,14 @@
 // ***** main colors *******
-$brand: #00407a;
-$highlight: #D83612;
-$highlight-hov: darken($highlight, 5%);
+$brand: #ffbd06;
+$highlight: #ffbd06;
+$highlight-hov: lighten($highlight, 10%);
 
 // ***** text colors *******
-$text: #181a19;
+$text: #000;
 
 // ***** link colors *******
-$link: lighten($brand, 10%);
-$link-hov: lighten($link, 25%);
+$link: #ffbd06;
+$link-hov: lighten($link, 10%);
 
 // ===== fonts =====
 $font: 'Nunito', sans-serif;
