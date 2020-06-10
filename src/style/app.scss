@@ -2,6 +2,7 @@
 @import 'core/variables';
 @import 'core/mixins';
 @import 'core/base';
+@import 'core/bootstrap-update';
 
 //elements
 //@import 'elements/breadcrumbs';
@@ -11,8 +12,8 @@
 //@import 'elements/stickyHeader';
 
 //section
-@import 'sections/footer';
 @import 'sections/header';
+@import 'sections/footer';
 
 //pages
 @import 'pages/index';

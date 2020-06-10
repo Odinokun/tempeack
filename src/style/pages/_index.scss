@@ -1,0 +1,137 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: '';
+    background-image: url('../img/bg-menu.svg');
+    background-repeat: no-repeat;
+    background-position: 47vw 28.5%;
+
+    @include max(980) {
+      background-image: none;
+    }
+  }
+
+  .container-inn {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 966px;
+
+    @include max(980) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.index-left {
+  width: 50%;
+
+  @include max(980) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+.index-left__title {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #000;
+
+  @include max(980) {
+    font-size: 32px;
+    width: 100%;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+}
+
+.index-left-form {
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: 64px;
+
+  @include max(980) {
+    margin-bottom: 16px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+}
+
+.index-right {
+  width: 50%;
+  max-width: 360px;
+  padding-top: 88px;
+
+  @include max(980) {
+    width: 100%;
+    max-width: 360px;
+    padding-top: 16px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+  }
+}
+
+.index-right__sign-up {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+
+  @include max(980) {
+    justify-content: center;
+    padding-top: 0;
+  }
+}
+
+.index-right__sign-up-text {
+  font-weight: 400;
+  color: #000;
+}
+
+.index-right__sign-up-btn {
+  font-weight: 400;
+  padding-right: 14px;
+  padding-left: 14px;
+  color: #fff;
+  background-color: transparent;
+
+  @include max(980) {
+    color: $link;
+  }
+  &:hover {
+    color: #000;
+    background-color: transparent;
+    svg {
+      fill: #000;
+    }
+  }
+  svg {
+    fill: #fff;
+    width: 7px;
+    height: 13px;
+    margin-left: 4px;
+
+    @include max(980) {
+      fill: $link;
+    }
+  }
+}

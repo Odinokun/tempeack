@@ -156,6 +156,9 @@ svg {
   font-weight: 400;
   font-family: 'Nunito', sans-serif;
   border-radius: 25px !important;
+  svg {
+    transition: fill .5s;
+  }
   &:hover {
     color: #fff;
     background-color: $highlight-hov;
@@ -167,4 +170,14 @@ svg {
     background-color: lighten(#4a4a4a, 10%);
   }
 
+}
+.button--highlight{
+  background-color: $link;
+  &:hover {
+    background-color: $link-hov;
+  }
+
+}
+.button--lg{
+  width: 100%;
 }
