@@ -1,4 +1,24 @@
 //begin footer
-footer.footer(style='background-color:#167;color:#fff;text-align:center;text-transform:uppercase;')
-  h1 footer
+footer.footer
+  .container.container-inn
+    a(href="#").footer__link Privacy Policy & Terms of Use
+
+    .footer__right
+      //begin social__list
+      ul.footer__social.social__list
+        li.social__item
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer").social__link.social__link--fb
+            +svg('fb')
+        li.social__item
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer").social__link.social__link--linkedin
+            +svg('linkedin')
+        li.social__item
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer").social__link.social__link--youtube
+            +svg('youtube')
+        li.social__item
+          a(href="#" target="_blank" rel="nofollow noopener noreferrer").social__link.social__link--twitter
+            +svg('twitter')
+      //end social__list
+
+      span.footer__copyright &copy; 2020 Tempeak LLC
 //end footer
