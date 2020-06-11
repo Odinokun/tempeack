@@ -7,20 +7,26 @@
     padding-top: 22px;
   }
   .container-inn {
-    position: relative;
     display: flex;
     align-items: center;
   }
 }
 
+.page-header--sm {
+  .container-inn {
+    max-width: 966px;
+
+    @include max(980) {
+      max-width: 100%;
+    }
+  }
+  .page-header__title {
+    margin-left: 0;
+  }
+}
+
 .page-header__back {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 13px;
   flex: none;
-  height: 24px;
-  margin: auto;
   padding: 0 25px;
 
   @include max(980) {
@@ -50,10 +56,10 @@
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 0;
-  margin-left: 95px;
+  margin-left: 20px;
   color: #000;
 
   @include max(980) {
-    margin-left: 32px;
+    margin-left: 0;
   }
 }

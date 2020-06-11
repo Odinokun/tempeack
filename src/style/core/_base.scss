@@ -137,6 +137,12 @@ svg {
 .container-inn {
   max-width:1156px;
 }
+.container-inn--sm{
+  max-width: 966px;
+  @include max(980) {
+    max-width: 100%;
+  }
+}
 
 .button {
   line-height: 1;
