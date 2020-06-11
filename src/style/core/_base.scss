@@ -152,6 +152,7 @@ svg {
   cursor: pointer;
   transition: .5s;
   white-space: nowrap;
+  user-select: none;
   text-decoration: none;
   color: #fff;
   border: none;

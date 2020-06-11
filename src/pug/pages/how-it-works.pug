@@ -1,0 +1,66 @@
+extends ../_template
+
+mixin faq__item(question)
+  .faq__item
+    .faq__question
+      span #{question}
+      +svg('tab-arr')
+    .faq__answer
+      span Absolutely not. The service works on a subscription type basis, so there’s no extra costs if you want to hire a person permanently. Also, there’s no additional paperwork needed. You’re totally in control.
+
+block variables
+  - var title       = 'How It Works | Tempeak'
+  - var description = 'How It Works | Tempeak'
+  - var ogtitle     = 'How It Works | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'How It Works'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header
+    include ../sections/page-header-sm
+
+    //begin content
+    main.main.how-it-works
+      .container.container-inn.container-inn--sm
+        .how-it-works__img
+          img(src="assets/img/how-it-works.jpg" alt="how-it-works")
+
+      //begin FAQ
+      .how-it-works__faq.faq
+        .container.container-inn.container-inn--sm
+          header.faq__header
+            h3.faq__title FAQ
+            .faq__buttons
+              button(data-tab='#faq-employers').button.active Employers
+              button(data-tab='#faq-contractors').button Contractors
+          //begin faq__tabs
+          .faq__tabs
+            //begin faq-employers
+            .faq__tab.active#faq-employers
+              +faq__item('I found a person for a temp assignment, but now I want to hire him/her permanently. Is there an additional cost or paperwork to be done?', '')
+              +faq__item('My dental hygienist just called out sick and I don’t want to reschedule all his/her patients. Is there enough time to get a replacement?')
+              +faq__item('Can I request the same hygienist/assistant again?')
+              +faq__item('I really liked my temp employee that I recruited from Tempeak. How can I put in a good word for him/her?')
+              +faq__item('Can I negotiate the rates?')
+              +faq__item('How do I deal with the payment?')
+              +faq__item('Is my information and billing secure?')
+            //end faq-employers
+
+            //begin faq-contractors
+            .faq__tab#faq-contractors
+              +faq__item('Is my information and billing secure?')
+              +faq__item('How do I deal with the payment?')
+              +faq__item('Can I negotiate the rates?')
+              +faq__item('I found a person for a temp assignment, but now I want to hire him/her permanently. Is there an additional cost or paperwork to be done?', '')
+              +faq__item('My dental hygienist just called out sick and I don’t want to reschedule all his/her patients. Is there enough time to get a replacement?')
+              +faq__item('Can I request the same hygienist/assistant again?')
+              +faq__item('I really liked my temp employee that I recruited from Tempeak. How can I put in a good word for him/her?')
+            //end faq-contractors
+          //end faq__tabs
+      //end FAQ
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

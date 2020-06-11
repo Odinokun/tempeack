@@ -7,7 +7,8 @@ $(document).ready(function ($) {
   pageWidget([
     'index',
     'results',
-    'about'
+    'about',
+    'how-it-works'
   ]);
 });
 
