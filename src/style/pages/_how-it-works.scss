@@ -1,0 +1,160 @@
+.how-it-works {
+  padding-top: 16px;
+  padding-bottom: 60px;
+
+  @include max(980) {
+    padding-bottom: 20px;
+  }
+}
+
+.how-it-works__img {
+  overflow: hidden;
+  margin-bottom: 32px;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+//begin #FAQ
+.faq__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+
+  @include max(767) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.faq__title {
+  font-family: $font;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include max(767) {
+    margin-bottom: 16px;
+  }
+}
+
+.faq__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+
+  @include max(767) {
+    width: 100%;
+  }
+  .button {
+    font-size: 24px;
+    width: 100%;
+    max-width: 264px;
+    height: 48px;
+    margin-left: 24px;
+    padding: 0 15px;
+    color: #4a4a4a;
+    outline: none;
+    background-color: #f8f8f8;
+
+    @include max(767) {
+      font-size: 20px;
+      max-width: 100%;
+      margin-left: 16px;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      color: #fff;
+      background-color: $link;
+    }
+    &.active {
+      pointer-events: none;
+      color: #fff;
+      background-color: $link;
+    }
+  }
+}
+
+.faq__tabs {
+  @include max(767) {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+}
+
+.faq__tab {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+.faq__item {
+  margin-bottom: 16px;
+  &.active {
+    .faq__question {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.faq__question {
+  display: flex;
+  align-items: center;
+  min-height: 78px;
+  padding: 16px 32px;
+  cursor: pointer;
+  border-radius: 200px;
+  background-color: #f8f8f8;
+
+  @include max(767) {
+    padding: 16px;
+    border-radius: 0;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    flex: 1;
+    color: #000;
+  }
+  svg {
+    flex: none;
+    fill: #4a4a4a;
+    width: 25px;
+    height: 14px;
+    margin-left: 22px;
+    transition: transform .5s;
+
+    @include max(767) {
+      margin-left: 16px;
+    }
+  }
+}
+
+.faq__answer {
+  display: none;
+  padding: 13px 80px 3px 32px;
+  background-color: #fff;
+
+  @include max(767) {
+    padding: 13px 57px 3px 16px;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+  }
+}
+
+//end #FAQ
