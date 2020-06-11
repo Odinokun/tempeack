@@ -1,0 +1,61 @@
+extends ../_template
+
+block variables
+  - var title       = 'Pricing | Tempeak'
+  - var description = 'Pricing | Tempeak'
+  - var ogtitle     = 'Pricing | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Pricing'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header
+    include ../sections/page-header-sm
+
+    //begin content
+    main.main.pricing
+      .container.container-inn.container-inn--sm
+
+        //begin pricing__wrap
+        .pricing__wrap.pricing__wrap--contractors
+          .pricing__list-wrap
+            h3.pricing__title Contractors
+            //begin pricing__list
+            ul.pricing__list
+              li.pricing__item.pricing__item--free
+                .pricing__info
+                  h4.pricing__free Free
+            //end pricing__list
+        //end pricing__wrap
+
+        //begin pricing__wrap
+        .pricing__wrap.pricing__wrap--middle
+        //end pricing__wrap
+
+        //begin pricing__wrap
+        .pricing__wrap.pricing__wrap--business
+          .pricing__list-wrap
+            h3.pricing__title Business owners
+            //begin pricing__list
+            ul.pricing__list
+              li.pricing__item
+                .pricing__info
+                  .pricing__month 3 months
+                  .pricing__price $299.99
+              li.pricing__item
+                .pricing__info
+                  .pricing__month 6 months
+                  .pricing__price $499.99
+              li.pricing__item
+                .pricing__info
+                  .pricing__month 12 months
+                  .pricing__price $899.99
+            //end pricing__list
+          .pricing__footer
+            span + 1 month FREE trial + можна дописати про unlimited requests, no hiring fees, real time alerts, але думаю воно вже само собою розуміється або в інших місцях сказано
+        //end pricing__wrap
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

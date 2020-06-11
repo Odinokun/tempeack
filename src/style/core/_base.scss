@@ -6,14 +6,15 @@
 
 html,
 body {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-weight: 300;
-  font-family: $font;
-  font-size: 16px;
-  line-height: 1.38;
   color: $text;
+
   @include max(1280) {
     font-weight: 300;
   }
@@ -47,7 +48,7 @@ a {
   text-decoration: none;
   color: $link;
   &:hover {
-  text-decoration: none;
+    text-decoration: none;
     color: $link-hov;
   }
 }
@@ -135,34 +136,36 @@ svg {
 }
 
 .container-inn {
-  max-width:1156px;
+  max-width: 1156px;
 }
-.container-inn--sm{
+
+.container-inn--sm {
   max-width: 966px;
+
   @include max(980) {
     max-width: 100%;
   }
 }
 
 .button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px 32px;
   cursor: pointer;
+  user-select: none;
   transition: .5s;
   white-space: nowrap;
-  user-select: none;
   text-decoration: none;
   color: #fff;
   border: none;
+  border-radius: 25px !important;
   background-color: $highlight;
   box-shadow: none;
-  padding: 16px 32px;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Nunito', sans-serif;
-  border-radius: 25px !important;
   svg {
     transition: fill .5s;
   }
@@ -171,20 +174,21 @@ svg {
     background-color: $highlight-hov;
   }
 }
-.button--grey{
+
+.button--grey {
   background-color: #4a4a4a;
   &:hover {
     background-color: lighten(#4a4a4a, 10%);
   }
-
 }
-.button--highlight{
+
+.button--highlight {
   background-color: $link;
   &:hover {
     background-color: $link-hov;
   }
-
 }
-.button--lg{
+
+.button--lg {
   width: 100%;
 }
