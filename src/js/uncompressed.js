@@ -8,7 +8,8 @@ $(document).ready(function ($) {
     'index',
     'results',
     'about',
-    'how-it-works'
+    'how-it-works',
+    'pricing'
   ]);
 });
 
@@ -44,8 +45,5 @@ function pageWidget(pages) {
   widgetStilization.prependTo(".widget_wrap");
 }
 // END Меню для навигации при разработке
-
-
-
 
 //====== Begin Programmer code ======
