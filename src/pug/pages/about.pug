@@ -1,0 +1,28 @@
+extends ../_template
+
+block variables
+  - var title       = 'About | Tempeak'
+  - var description = 'About | Tempeak'
+  - var ogtitle     = 'About | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'About'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header
+    include ../sections/page-header-sm
+
+    //begin content
+    main.main.about
+      .container.container-inn.container-inn--sm
+        p Welcome to TEMPEAK, a temporary and permanent staffing placement company that is provided to you by SemereyDentalManagement,LLC. TEMPEAK provides a simple solution to staffing issues for dental community all over United States. It directly connects employee to an employer in a matter of minutes. While using TEMPEAK, you will discover how easy and fast you can gain access to thousands of available licensed dental professionals in a matter of seconds. No more calling the traditional staffing agency! Simply register and find out for yourself about our user friendly system that WILL CHANGE YOUR BUSINESS.
+        h3.about__subtitle Our system finds the most compatible match for your assignment.
+        p TEMPEAK filters and matches the employee you are looking for. In every contractor’s profile, you will find their current license, availability, preferred pay rate, work experience and much more information that can help you to select the most suitable contractor. There’s no wait time, you can request a contractor even for the same day. No more dealing with the chaos of last minute call outs!
+        h3.about__subtitle Ratings are very important in TEMPEAK
+        p What makes TEMPEAK unique is that after every assignment both employer and employee will rate each other. The ratings will help our future employers and employees to find the top professionals in dental industry for outstanding services.
+        p Don’t let your staff stop you from caring for your patients. Register right now and gain access to licensed dental professionals, that will help you get through your busy schedule with ease. You'll gain the power to control your day and your business. Let every day start and end with full staff support.
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

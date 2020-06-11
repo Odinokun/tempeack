@@ -1,14 +1,9 @@
 .person-card {
   display: flex;
   align-items: center;
-  max-width: 938px;
   margin: 0 auto;
   padding: 15px 0;
   border-bottom: 1px solid #ebebeb;
-
-  @include max(980) {
-    max-width: 100%;
-  }
 }
 
 .person-card__ava {
