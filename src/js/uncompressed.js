@@ -12,6 +12,7 @@ $(document).ready(function ($) {
     'pricing',
     'contact',
     'log-in',
+    'reset-password',
   ]);
 });
 
