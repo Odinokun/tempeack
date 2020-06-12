@@ -98,15 +98,17 @@
       max-width: 100%;
     }
   }
+  .form-group--input {
+    width: calc(50% - 12px);
+
+    @include max(767) {
+      width: 100%;
+    }
+  }
 }
 
 .form-group--input {
-  width: calc(50% - 12px);
   margin-bottom: 16px;
-
-  @include max(767) {
-    width: 100%;
-  }
 }
 
 .form-group--textarea {
