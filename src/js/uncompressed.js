@@ -11,6 +11,7 @@ $(document).ready(function ($) {
     'how-it-works',
     'pricing',
     'contact',
+    'log-in',
   ]);
 });
 
