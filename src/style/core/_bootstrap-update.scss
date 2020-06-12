@@ -3,6 +3,21 @@
   box-shadow: none;
 }
 
+.form-group {
+  input,
+  textarea {
+    @include placeholder-color(#ccc);
+  }
+}
+
+.form-group--input {
+  position: relative;
+  svg {
+    fill: #4a4a4a;
+    transform: translateY(-1px);
+  }
+}
+
 .form-group--select {
   position: relative;
   &::before {
@@ -23,16 +38,15 @@
     cursor: pointer;
 
     -webkit-appearance: none;
-    option{
+    option {
       font-size: 16px;
-      color: #000;
       padding-left: 5px !important;
+      color: #000;
     }
   }
 }
 
 .form-control {
-
   height: 48px;
   padding-right: 40px;
   padding-left: 45px;

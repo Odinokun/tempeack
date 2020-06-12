@@ -9,7 +9,8 @@ $(document).ready(function ($) {
     'results',
     'about',
     'how-it-works',
-    'pricing'
+    'pricing',
+    'contact',
   ]);
 });
 
