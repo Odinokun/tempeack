@@ -25,6 +25,16 @@
   }
 }
 
+.page-header--center {
+  .container-inn {
+    justify-content: center;
+
+    @include max(575) {
+      justify-content: flex-start;
+    }
+  }
+}
+
 .page-header__back {
   flex: none;
   padding: 0 25px;
