@@ -1,0 +1,84 @@
+extends ../_template
+
+block variables
+  - var title       = 'Sign Up | Tempeak'
+  - var description = 'Sign Up | Tempeak'
+  - var ogtitle     = 'Sign Up | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Sign up'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header
+    include ../sections/page-header-sm-center
+
+    //begin content
+    main.main.log-in
+      .container.container-inn.container-inn--sm
+        form.log-in__form.log-in-form
+          //begin log-in-form__body
+          .log-in-form__body
+            //begin form-group
+            .form-group.form-group--select
+              .form-group__icon
+                +svg('persons')
+              select.form-control.selectpicker
+                option(value='') Business Owner
+                option(value='') Business Owner 1
+                option(value='') Business Owner 2
+                option(value='') Business Owner 3
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('person')
+              input.form-control(type='text' placeholder='First Name')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('person')
+              input.form-control(type='text' placeholder='Last Name')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('cake')
+              input.form-control(type='text' placeholder='Birthday')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('email')
+              input.form-control(type='email' placeholder='Email Address')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('lock')
+              input.form-control(type='password' placeholder='Password')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('lock')
+              input.form-control(type='password' placeholder='Confirm Password')
+            //end form-group
+
+            .log-in-form__row
+              label.log-in-form__checkbox.log-in-form__checkbox--check
+                input.form-check-input(type='checkbox')
+                span I agree to the Terms of Use
+            button.button.button--highlight.button--lg Sign up
+          //end log-in-form__body
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

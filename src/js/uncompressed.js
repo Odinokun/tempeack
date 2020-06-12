@@ -13,6 +13,7 @@ $(document).ready(function ($) {
     'contact',
     'log-in',
     'reset-password',
+    'sign-up',
   ]);
 });
 
