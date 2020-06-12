@@ -1,0 +1,74 @@
+extends ../_template
+
+block variables
+  - var title       = 'Contact | Tempeak'
+  - var description = 'Contact | Tempeak'
+  - var ogtitle     = 'Contact | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Contact'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header
+    include ../sections/page-header-sm
+
+    //begin content
+    main.main.contact
+      .container.container-inn.container-inn--sm
+
+        .contact__form.contact-form
+          //begin contact-form-header
+          .contact-form__header.contact-form-header
+            a(href="https://goo.gl/maps/CVqkLzd656Tig33q7" target="_blank" rel="nofollow noopener noreferrer").contact-form-header__link.contact-form-header__link--adress
+              +svg('marker')
+              span Columbia, МD
+            a(href="tel:18774475007").contact-form-header__link.contact-form-header__link--phone
+              +svg('phone')
+              span 1 (877) 447 5007
+            a(href="mailto:service@tempeak.com").contact-form-header__link.contact-form-header__link--email
+              +svg('email')
+              span service@tempeak.com
+          //end contact-form-header
+
+          //begin contact-form__body
+          form.contact-form__body
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('star')
+              input.form-control(type='text' placeholder='Subject')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('email')
+              input.form-control(type='email' placeholder='Email Address')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('person')
+              input.form-control(type='email' placeholder='Your Name')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                +svg('phone')
+              input.form-control(type='phone' placeholder='Phone')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--textarea
+              textarea.form-control(placeholder='Message')
+            //end form-group
+
+            button.button.button--highlight.button--lg Send Message
+          //end contact-form__body
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
