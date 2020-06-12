@@ -14,6 +14,7 @@ $(document).ready(function ($) {
     'log-in',
     'reset-password',
     'sign-up',
+    'sign-up-2',
   ]);
 });
 
