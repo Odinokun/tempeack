@@ -2,10 +2,8 @@
 
 module.exports = [
   './node_modules/normalize.css/normalize.css',
-  './node_modules/bootstrap/dist/css/bootstrap.css'
-
-  // include jQuery UI
-  // './src/vendors/jquery-ui/jquery-ui.min.css',
+  './node_modules/bootstrap/dist/css/bootstrap.css',
+  './src/vendors/jquery-ui/jquery-ui.min.css',
 
   // include Slick slider
   // './node_modules/slick-carousel/slick/slick.css',
