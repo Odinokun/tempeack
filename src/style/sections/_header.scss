@@ -96,10 +96,10 @@
 //end #MENU
 
 //begin #BUTTONS
-
 .button--log-in {
   margin-right: 5px;
   color: #000;
+  outline: none !important;
   background-color: transparent;
 
   @include max(980) {
@@ -108,12 +108,8 @@
     padding-left: 0;
   }
   &:hover {
-    @include max(980) {
-      background-color: transparent;
-    }
-    svg {
-      fill: #fff;
-    }
+    color: #000;
+    background-color: transparent;
   }
   svg {
     flex: none;

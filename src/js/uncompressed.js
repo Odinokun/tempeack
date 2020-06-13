@@ -17,6 +17,7 @@ $(document).ready(function ($) {
     'sign-up-2',
     'sign-up-lg',
     'sign-up-lg-2',
+    'search-contractor',
   ]);
 });
 

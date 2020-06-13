@@ -1,0 +1,88 @@
+//begin #PROFILE MENU
+.header-profile-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.header-profile-menu__link {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin: 0 15px;
+  text-decoration: none;
+
+  @include max(767) {
+    margin: 0 0 0 24px;
+  }
+  &:hover {
+    svg {
+      fill: $link;
+    }
+    span {
+      color: $link;
+    }
+  }
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    transition: color .5s;
+    color: #000;
+
+    @include max(767) {
+      display: none;
+    }
+  }
+  svg {
+    display: none;
+    fill: #4a4a4a;
+    width: 20px;
+    height: 20px;
+    transition: fill .5s;
+
+    @include max(767) {
+      display: block;
+    }
+  }
+}
+
+//end #PROFILE MENU
+
+//begin #BUTTON
+.button--profile {
+  margin-top: 3px;
+  margin-left: 48px;
+  padding-right: 0;
+  padding-left: 0;
+  color: #000;
+  outline: none !important;
+  background-color: transparent;
+
+  @include max(767) {
+    margin-left: 24px;
+  }
+  span {
+    @include max(767) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    color: #000;
+    background-color: transparent;
+  }
+  svg {
+    flex: none;
+    fill: #4a4a4a;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    transition: fill .5s;
+
+    @include max(767) {
+      margin-right: 0;
+    }
+  }
+}
+
+//end #BUTTON
