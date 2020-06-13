@@ -1,0 +1,28 @@
+mixin person-card(ava)
+  //begin person-card
+  .person-card
+    .person-card__ava
+      img(src="assets/img/user-" + ava + ".jpg" alt="picture")
+    .person-card__info
+      h3.person-card__name John Wesley Langley
+      span.person-card__position Thief River Falls
+      .person-card__rating
+        .rating-star-wrap
+          svg.rating-star-1
+            use(xlink:href="assets/img/sprite.svg#star-rating-full")
+          span.rating-star-filter
+          svg.rating-star-2
+            use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+
+    .person-card__button
+      button.button.button--grey
+        span Send
+        +svg('eye')
+  //end person-card
+
+
++person-card('01')
++person-card('02')
++person-card('03')
+
+

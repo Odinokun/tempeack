@@ -62,13 +62,59 @@
   }
 }
 
+//begin #STARS
+//.person-card__rating{
+//  display: flex;
+//  svg {
+//    margin-right: 20px;
+//  width: 70px;
+//  height: 70px;
+//
+//
+//  }
+//}
+.rating-star-wrap{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  overflow: hidden;
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    fill:#4a4a4a;
+  }
+}
+.rating-star-filter{
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(50%);
+  // переделать звезды со спрайта на background
+}
+
+//end #STARS
+
+
 .person-card__button {
   .button {
     padding-right: 17px;
     padding-left: 17px;
+    min-width: 168px;
 
     @include max(980) {
       width: 32px;
+      min-width: 0;
       height: 32px;
       padding: 0;
       border-radius: 50% !important;
