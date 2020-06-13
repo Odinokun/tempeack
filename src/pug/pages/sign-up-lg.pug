@@ -1,0 +1,211 @@
+extends ../_template
+
+block variables
+  - var title       = 'Sign Up | Tempeak'
+  - var description = 'Sign Up | Tempeak'
+  - var ogtitle     = 'Sign Up | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Sign up'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header
+    include ../sections/page-header-sm
+
+    //begin content
+    main.main.sign-up-lg
+      .container.container-inn.container-inn--sm
+        //begin sign-up-lg-form
+        form.sign-up-lg__form.sign-up-lg-form
+          .sign-up-lg-form__body
+            //begin sign-up-lg-form__left
+            .sign-up-lg-form__left
+              //begin sign-up-lg-form__logo
+              .sign-up-lg-form__logo
+                .sign-up-lg-form__logo-img
+                  img(src="assets/img/business-logo.png" alt="logo")
+                .sign-up-lg-form__logo-text
+                  span Business Logo
+              //end sign-up-lg-form__logo
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  +svg('building')
+                input.form-control(type='text' placeholder='Business Name')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--select
+                .form-group__icon
+                  +svg('marker')
+                select.form-control.selectpicker
+                  option(value='') State
+                  option(value='') State 1
+                  option(value='') State 2
+                  option(value='') State 3
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--select
+                .form-group__icon
+                  +svg('marker')
+                select.form-control.selectpicker
+                  option(value='') City
+                  option(value='') City 1
+                  option(value='') City 2
+                  option(value='') City 3
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  +svg('marker')
+                input.form-control(type='text' placeholder='Address')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  +svg('email-open')
+                input.form-control(type='text' placeholder='Zip Code')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  +svg('phone')
+                input.form-control(type='phone' placeholder='Phone')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  +svg('earth')
+                input.form-control(type='text' placeholder='Website')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  +svg('shield')
+                input.form-control(type='text' placeholder='License number')
+              //end form-group
+            //end sign-up-lg-form__left
+
+            //begin sign-up-lg-form__right
+            .sign-up-lg-form__right
+              h3.sign-up-lg-form__title Office hours
+
+              ul.slider-range__list
+                //begin slider-range
+                li.slider-range
+                  label.log-in-form__checkbox.log-in-form__checkbox--check
+                    input.form-check-input(type='checkbox' checked)
+                    span Monday
+                  .slider-range__input-wrap
+                    input.slider-range__input.slider-range__input--start(type='text', readonly='', data-start='9', data-min='0')
+                    span
+                    input.slider-range__input.slider-range__input--finish(type='text', readonly='', data-finish='18', data-max='24')
+                  .slider-range__scale
+                //end slider-range
+
+                //begin slider-range
+                li.slider-range
+                  label.log-in-form__checkbox.log-in-form__checkbox--check
+                    input.form-check-input(type='checkbox' checked)
+                    span Tuesday
+                  .slider-range__input-wrap
+                    input.slider-range__input.slider-range__input--start(type='text', readonly='', data-start='9', data-min='0')
+                    span
+                    input.slider-range__input.slider-range__input--finish(type='text', readonly='', data-finish='18', data-max='24')
+                  .slider-range__scale
+                //end slider-range
+
+                //begin slider-range
+                li.slider-range
+                  label.log-in-form__checkbox.log-in-form__checkbox--check
+                    input.form-check-input(type='checkbox' checked)
+                    span Wednesday
+                  .slider-range__input-wrap
+                    input.slider-range__input.slider-range__input--start(type='text', readonly='', data-start='9', data-min='0')
+                    span
+                    input.slider-range__input.slider-range__input--finish(type='text', readonly='', data-finish='18', data-max='24')
+                  .slider-range__scale
+                //end slider-range
+
+                //begin slider-range
+                li.slider-range
+                  label.log-in-form__checkbox.log-in-form__checkbox--check
+                    input.form-check-input(type='checkbox' checked)
+                    span Thursday
+                  .slider-range__input-wrap
+                    input.slider-range__input.slider-range__input--start(type='text', readonly='', data-start='9', data-min='0')
+                    span
+                    input.slider-range__input.slider-range__input--finish(type='text', readonly='', data-finish='18', data-max='24')
+                  .slider-range__scale
+                //end slider-range
+
+                //begin slider-range
+                li.slider-range
+                  label.log-in-form__checkbox.log-in-form__checkbox--check
+                    input.form-check-input(type='checkbox' checked)
+                    span Friday
+                  .slider-range__input-wrap
+                    input.slider-range__input.slider-range__input--start(type='text', readonly='', data-start='9', data-min='0')
+                    span
+                    input.slider-range__input.slider-range__input--finish(type='text', readonly='', data-finish='18', data-max='24')
+                  .slider-range__scale
+                //end slider-range
+
+                //begin slider-range
+                li.slider-range
+                  label.log-in-form__checkbox.log-in-form__checkbox--check
+                    input.form-check-input(type='checkbox' checked)
+                    span Saturday
+                  .slider-range__input-wrap
+                    input.slider-range__input.slider-range__input--start(type='text', readonly='', data-start='9', data-min='0')
+                    span
+                    input.slider-range__input.slider-range__input--finish(type='text', readonly='', data-finish='18', data-max='24')
+                  .slider-range__scale
+                //end slider-range
+
+                //begin slider-range
+                li.slider-range.disabled
+                  label.log-in-form__checkbox.log-in-form__checkbox--check
+                    input.form-check-input(type='checkbox')
+                    span Sunday
+                  .slider-range__input-wrap
+                    input.slider-range__input.slider-range__input--start(type='text', readonly='', data-start='0', data-min='0')
+                    span
+                    input.slider-range__input.slider-range__input--finish(type='text', readonly='', data-finish='24', data-max='24')
+                  .slider-range__scale
+                //end slider-range
+
+              h3.sign-up-lg-form__title Pick subscription
+
+              .sign-up-lg-form__subscription
+                label.log-in-form__checkbox.log-in-form__checkbox--radio
+                  input.form-check-input(type='radio' name='subscription')
+                  span <i>3 months</i> <strong>$</strong> 299,97
+
+                label.log-in-form__checkbox.log-in-form__checkbox--radio
+                  input.form-check-input(type='radio' name='subscription')
+                  span <i>6 months</i> <strong>$</strong> 539,94
+
+                label.log-in-form__checkbox.log-in-form__checkbox--radio
+                  input.form-check-input(type='radio' name='subscription')
+                  span <i>12 months</i> <strong>$</strong> 959,88
+
+                .sign-up-lg-form__trial
+                  span.sign-up-lg-form__trial-number +1
+                  span.sign-up-lg-form__trial-text month trial
+
+              button.button.button--highlight.button--lg Sign up
+            //end sign-up-lg-form__right
+        //end sign-up-lg-form
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
