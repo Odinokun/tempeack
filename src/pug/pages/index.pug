@@ -23,7 +23,8 @@ block content
             //begin form-group
             .form-group.form-group--select
               .form-group__icon
-                +svg('hospital')
+                svg.svg-hospital
+                  use(xlink:href="assets/img/sprite.svg#hospital")
               select.form-control.selectpicker
                 option(value='') Clinical Staff
                 option(value='') Clinical Staff 1
@@ -34,7 +35,8 @@ block content
             //begin form-group
             .form-group.form-group--select
               .form-group__icon
-                +svg('marker')
+                svg.svg-marker
+                  use(xlink:href="assets/img/sprite.svg#marker")
               select.form-control
                 option(value='') State
                 option(value='') State 1

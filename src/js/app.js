@@ -12,6 +12,10 @@ $(function() {
   // begin FAQ accordion
   require('./modules/accordion')();
 
+  // begin range slider
+  require('./modules/slider-range')();
+  require('./modules/slider-range-single')();
+
   // begin phone mask
   // require('./modules/maskedinput')();
 

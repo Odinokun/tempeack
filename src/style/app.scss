@@ -2,15 +2,17 @@
 @import 'core/variables';
 @import 'core/mixins';
 @import 'core/base';
+@import 'core/svg-icons';
 @import 'core/bootstrap-update';
 
 //elements
 @import 'elements/person-card';
+@import 'elements/slider-range-list';
+@import 'elements/slider-range-single-list';
 //@import 'elements/breadcrumbs';
 //@import 'elements/pagination';
 //@import 'elements/popup';
 //@import 'elements/slickBase';
-//@import 'elements/stickyHeader';
 
 //section
 @import 'sections/header';

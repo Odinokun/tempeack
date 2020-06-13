@@ -24,18 +24,10 @@ block content
               //begin sign-up-lg-form__logo
               .sign-up-lg-form__logo
                 .sign-up-lg-form__logo-img
-                  img(src="assets/img/business-logo.png" alt="logo")
+                  img(src="assets/img/person-logo.png" alt="logo")
                 .sign-up-lg-form__logo-text
-                  span Business Logo
+                  span Your Photo
               //end sign-up-lg-form__logo
-
-              //begin form-group
-              .form-group.form-group--input
-                .form-group__icon
-                  svg.svg-building
-                    use(xlink:href="assets/img/sprite.svg#building")
-                input.form-control(type='text' placeholder='Business Name')
-              //end form-group
 
               //begin form-group
               .form-group.form-group--select
@@ -88,9 +80,33 @@ block content
               //begin form-group
               .form-group.form-group--input
                 .form-group__icon
-                  svg.svg-earth
-                    use(xlink:href="assets/img/sprite.svg#earth")
-                input.form-control(type='text' placeholder='Website')
+                  svg.svg-hat
+                    use(xlink:href="assets/img/sprite.svg#hat")
+                input.form-control(type='text' placeholder='What School You Attend')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-calendar
+                    use(xlink:href="assets/img/sprite.svg#calendar")
+                input.form-control(type='text' placeholder='Date of Graduation')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-clock
+                    use(xlink:href="assets/img/sprite.svg#clock")
+                input.form-control(type='text' placeholder='Experience')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-car
+                    use(xlink:href="assets/img/sprite.svg#car")
+                input.form-control(type='text' placeholder='Miles Available to Commute')
               //end form-group
 
               //begin form-group
@@ -98,36 +114,40 @@ block content
                 .form-group__icon
                   svg.svg-shield
                     use(xlink:href="assets/img/sprite.svg#shield")
-                input.form-control(type='text' placeholder='License number')
+                input.form-control(type='text' placeholder='License Number')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input.form-group--input-file
+                .form-group__icon
+                  svg.svg-shield
+                    use(xlink:href="assets/img/sprite.svg#shield")
+                span.form-group__text Upload License
+                input.form-control(type='file')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input.form-group--input-file
+                .form-group__icon
+                  svg.svg-list
+                    use(xlink:href="assets/img/sprite.svg#list")
+                span.form-group__text Upload Resume
+                input.form-control(type='file')
               //end form-group
             //end sign-up-lg-form__left
 
             //begin sign-up-lg-form__right
             .sign-up-lg-form__right
-              h3.sign-up-lg-form__title Office hours
+              h3.sign-up-lg-form__title Days Available to Work
 
               include ../elements/slider-range-list
 
-              h3.sign-up-lg-form__title Pick subscription
+              h3.sign-up-lg-form__title Salary (hourly) rate if request till appointment
 
-              //begin sign-up-lg-form__subscription
-              .sign-up-lg-form__subscription
-                label.log-in-form__checkbox.log-in-form__checkbox--radio
-                  input.form-check-input(type='radio' name='subscription')
-                  span <i>3 months</i> <strong>$</strong> 299,97
-
-                label.log-in-form__checkbox.log-in-form__checkbox--radio
-                  input.form-check-input(type='radio' name='subscription')
-                  span <i>6 months</i> <strong>$</strong> 539,94
-
-                label.log-in-form__checkbox.log-in-form__checkbox--radio
-                  input.form-check-input(type='radio' name='subscription')
-                  span <i>12 months</i> <strong>$</strong> 959,88
-
-                .sign-up-lg-form__trial
-                  span.sign-up-lg-form__trial-number +1
-                  span.sign-up-lg-form__trial-text month trial
-              //end sign-up-lg-form__subscription
+              //begin sign-up-lg-form__salary
+              .sign-up-lg-form__salary
+                include ../elements/slider-range-single-list
+              //end sign-up-lg-form__salary
 
               button.button.button--highlight.button--lg Sign up
             //end sign-up-lg-form__right

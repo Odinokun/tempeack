@@ -103,121 +103,7 @@
   color: #000;
 }
 
-.slider-range__list {
-  margin: 0 0 32px 0;
-  padding: 0;
-}
-
-.slider-range {
-  position: relative;
-  margin-bottom: 16px;
-  padding-top: 5px;
-  list-style: none;
-  &.disabled {
-    .slider-range__input-wrap {
-      opacity: .6;
-    }
-    .slider-range__scale {
-      pointer-events: none;
-      opacity: .6;
-    }
-
-    .ui-slider-horizontal .ui-slider-range,
-    .ui-state-default,
-    .ui-widget-content .ui-state-default {
-      background-color: #d4d4d4;
-    }
-  }
-  .log-in-form__checkbox--check {
-    padding-top: 10px;
-    span {
-      font-size: 16px;
-      font-weight: 400;
-      padding-left: 30px;
-    }
-  }
-}
-
-.slider-range__input-wrap {
-  position: absolute;
-  top: 7px;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 92px;
-  pointer-events: none;
-  span {
-    display: block;
-    width: 5px;
-    height: 1px;
-    background-color: #000;
-  }
-}
-
-.slider-range__input {
-  font-size: 18px;
-  font-weight: 400;
-  width: 37px;
-  padding: 3px 0;
-  text-align: center;
-  color: #000;
-  border-top: none;
-  border-right: none;
-  border-bottom: 2px solid $link;
-  border-left: none;
-  box-shadow: none;
-  &::before,
-  &::after {
-    position: absolute;
-    bottom: 0;
-    width: 37px;
-    height: 2px;
-    content: '';
-    background-color: $link;
-  }
-  &::before {
-    left: 0;
-  }
-  &::after {
-    right: 0;
-  }
-}
-
-//begin #RANGE STYLE
-.slider-range {
-  .ui-widget.ui-widget-content {
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #d4d4d4;
-  }
-  .ui-slider-horizontal .ui-slider-range {
-    top: -1px;
-    height: 4px;
-    border: none;
-    background-color: $link;
-  }
-  .ui-state-default,
-  .ui-widget-content .ui-state-default {
-    width: 12px;
-    height: 12px;
-    border: none;
-    border-radius: 12px;
-    outline: none;
-    background-color: $link;
-  }
-}
-
-//end #RANGE STYLE
-
-.slider-range__scale {
-  margin-top: 18px;
-  span:nth-child(2) {
-    transform: translateX(8px);
-  }
-}
-
+//begin #SUBSCRIPTION
 .sign-up-lg-form__subscription {
   position: relative;
   display: flex;
@@ -272,3 +158,5 @@
   max-width: 50px;
   color: #040404;
 }
+
+//end #SUBSCRIPTION
