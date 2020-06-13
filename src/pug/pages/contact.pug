@@ -20,14 +20,17 @@ block content
         form.contact__form.contact-form
           //begin contact-form-header
           .contact-form__header.contact-form-header
-            a(href="https://goo.gl/maps/CVqkLzd656Tig33q7" target="_blank" rel="nofollow noopener noreferrer").contact-form-header__link.contact-form-header__link--adress
-              +svg('marker')
+            a(href="https://goo.gl/maps/CVqkLzd656Tig33q7" target="_blank" rel="nofollow noopener noreferrer").contact-form-header__link
+              svg.svg-marker
+                use(xlink:href="assets/img/sprite.svg#marker")
               span Columbia, МD
-            a(href="tel:18774475007").contact-form-header__link.contact-form-header__link--phone
-              +svg('phone')
+            a(href="tel:18774475007").contact-form-header__link
+              svg.svg-phone
+                use(xlink:href="assets/img/sprite.svg#phone")
               span 1 (877) 447 5007
-            a(href="mailto:service@tempeak.com").contact-form-header__link.contact-form-header__link--email
-              +svg('email')
+            a(href="mailto:service@tempeak.com").contact-form-header__link
+              svg.svg-email
+                use(xlink:href="assets/img/sprite.svg#email")
               span service@tempeak.com
           //end contact-form-header
 
@@ -36,28 +39,32 @@ block content
             //begin form-group
             .form-group.form-group--input
               .form-group__icon
-                +svg('star')
+                svg.svg-star
+                  use(xlink:href="assets/img/sprite.svg#star")
               input.form-control(type='text' placeholder='Subject')
             //end form-group
 
             //begin form-group
             .form-group.form-group--input
               .form-group__icon
-                +svg('email')
+                svg.svg-email
+                  use(xlink:href="assets/img/sprite.svg#email")
               input.form-control(type='email' placeholder='Email Address')
             //end form-group
 
             //begin form-group
             .form-group.form-group--input
               .form-group__icon
-                +svg('person')
+                svg.svg-person
+                  use(xlink:href="assets/img/sprite.svg#person")
               input.form-control(type='email' placeholder='Your Name')
             //end form-group
 
             //begin form-group
             .form-group.form-group--input
               .form-group__icon
-                +svg('phone')
+                svg.svg-phone
+                  use(xlink:href="assets/img/sprite.svg#phone")
               input.form-control(type='phone' placeholder='Phone')
             //end form-group
 
