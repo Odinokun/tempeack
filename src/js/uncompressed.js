@@ -18,6 +18,7 @@ $(document).ready(function ($) {
     'sign-up-lg',
     'sign-up-lg-2',
     'search-contractor',
+    'search-contractor-2',
   ]);
 });
 
