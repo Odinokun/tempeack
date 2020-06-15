@@ -22,6 +22,8 @@ $(document).ready(function ($) {
     'search-results',
     'profile-clinic',
     'profile-person',
+    'edit-profile-business',
+    'edit-profile-person',
   ]);
 });
 
