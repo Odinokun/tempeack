@@ -19,6 +19,7 @@ $(document).ready(function ($) {
     'sign-up-lg-2',
     'search-contractor',
     'search-contractor-2',
+    'search-results',
   ]);
 });
 
@@ -57,3 +58,5 @@ function pageWidget(pages) {
 // END Меню для навигации при разработке
 
 //====== Begin Programmer code ======
+
+

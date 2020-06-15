@@ -18,6 +18,10 @@
     width: 70px;
     height: 70px;
   }
+  @include max(340) {
+    width: 60px;
+    height: 60px;
+  }
   img {
     display: block;
     width: 100%;
@@ -29,6 +33,9 @@
 }
 
 .person-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   flex: 1;
   padding-right: 24px;
   padding-left: 24px;
@@ -62,13 +69,141 @@
   }
 }
 
+.person-card__info-row {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+}
+
+//begin #STARS
+.person-card-rating {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.person-card-rating__filter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  transform: translateX(0);
+  background-color: #fff;
+
+  @include max(980) {
+    height: 13px;
+  }
+}
+
+.person-card-rating__stars {
+  display: flex;
+}
+
+.person-card-rating__stars--transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rating-star {
+  position: relative;
+  overflow: hidden;
+  flex: none;
+  fill: #4a4a4a;
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
+
+  @include max(980) {
+    width: 13px;
+    height: 13px;
+  }
+  &:nth-child(n + 2) {
+    @include max(575) {
+      display: none !important;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.person-card-rating__value {
+  font-size: 13px;
+  font-weight: 400;
+  z-index: 1;
+  display: none;
+  color: #000;
+
+  @include max(575) {
+    display: block;
+  }
+}
+
+//end #STARS
+
+.person-card-salary,
+.person-card-experience {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+
+  @include max(575) {
+    padding-left: 10px;
+  }
+  .person-card-salary__text,
+  .person-card-salary__value,
+  .person-card-experience__text,
+  .person-card-experience__value {
+    font-size: 16px;
+    font-weight: 300;
+    white-space: nowrap;
+
+    @include max(980) {
+      font-size: 13px;
+    }
+  }
+  .person-card-salary__text,
+  .person-card-experience__text {
+    @include max(575) {
+      display: none;
+    }
+  }
+  i {
+    font-weight: 600;
+    font-style: normal;
+    padding: 0 4px 0 8px;
+    color: #4a4a4a;
+
+    @include max(980) {
+      font-size: 13px;
+    }
+  }
+  svg {
+    fill: #4a4a4a;
+    margin: 0 5px 0 8px;
+  }
+  .svg-clock {
+    @include max(980) {
+      width: 13px;
+      height: 13px;
+      transform: translateY(-2px);
+    }
+  }
+}
+
 .person-card__button {
   .button {
+    min-width: 168px;
     padding-right: 17px;
     padding-left: 17px;
 
     @include max(980) {
       width: 32px;
+      min-width: 0;
       height: 32px;
       padding: 0;
       border-radius: 50% !important;
@@ -89,6 +224,29 @@
 
       @include max(980) {
         margin: 0;
+      }
+    }
+  }
+}
+
+.person-card--result {
+  .button {
+    min-height: 48px;
+    padding: 11px 20px 8px 20px;
+
+    @include max(980) {
+      width: 32px;
+      height: 32px;
+      min-height: 0;
+      padding: 0;
+    }
+    svg {
+      width: 18px;
+      height: 14px;
+      margin-left: auto;
+
+      @include max(980) {
+        margin-left: 1px;
       }
     }
   }
