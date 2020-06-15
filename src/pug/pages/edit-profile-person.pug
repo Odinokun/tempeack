@@ -1,0 +1,190 @@
+extends ../_template
+
+block variables
+  - var title       = 'Edit profile | Tempeak'
+  - var description = 'Edit profile | Tempeak'
+  - var ogtitle     = 'Edit profile | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Edit profile'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header-profile
+    include ../sections/page-header-sm-menu-del
+
+    //begin content
+    main.main.sign-up-lg
+      .container.container-inn.container-inn--sm
+        //begin sign-up-lg-form
+        form.sign-up-lg__form.sign-up-lg-form
+          .sign-up-lg-form__body
+            //begin sign-up-lg-form__left
+            .sign-up-lg-form__left
+              //begin sign-up-lg-form__logo
+              .sign-up-lg-form__logo
+                .sign-up-lg-form__logo-img
+                  img(src="assets/img/profile-person.jpg" alt="logo")
+                .sign-up-lg-form__logo-text
+                  span Your Photo
+              //end sign-up-lg-form__logo
+
+              //begin form-group
+              //.form-group.form-group--input
+                .form-group__icon
+                  svg.svg-building
+                    use(xlink:href="assets/img/sprite.svg#building")
+                input.form-control(type='text' placeholder='Business Name')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-person
+                    use(xlink:href="assets/img/sprite.svg#person")
+                input.form-control(type='text' placeholder='First Name')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-person
+                    use(xlink:href="assets/img/sprite.svg#person")
+                input.form-control(type='text' placeholder='Last Name')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-cake
+                    use(xlink:href="assets/img/sprite.svg#cake")
+                input.form-control(type='text' placeholder='Birthday')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--select
+                .form-group__icon
+                  svg.svg-marker
+                    use(xlink:href="assets/img/sprite.svg#marker")
+                select.form-control.selectpicker
+                  option(value='') State
+                  option(value='') State 1
+                  option(value='') State 2
+                  option(value='') State 3
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--select
+                .form-group__icon
+                  svg.svg-marker
+                    use(xlink:href="assets/img/sprite.svg#marker")
+                select.form-control.selectpicker
+                  option(value='') City
+                  option(value='') City 1
+                  option(value='') City 2
+                  option(value='') City 3
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-marker
+                    use(xlink:href="assets/img/sprite.svg#marker")
+                input.form-control(type='text' placeholder='Address')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-email-open
+                    use(xlink:href="assets/img/sprite.svg#email-open")
+                input.form-control(type='text' placeholder='Zip Code')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-phone
+                    use(xlink:href="assets/img/sprite.svg#phone")
+                input.form-control(type='phone' placeholder='Phone')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-hat
+                    use(xlink:href="assets/img/sprite.svg#hat")
+                input.form-control(type='phone' placeholder='What School You Attend')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-calendar
+                    use(xlink:href="assets/img/sprite.svg#calendar")
+                input.form-control(type='phone' placeholder='Date of Graduation')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-clock
+                    use(xlink:href="assets/img/sprite.svg#clock")
+                input.form-control(type='phone' placeholder='Experience')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-car
+                    use(xlink:href="assets/img/sprite.svg#car")
+                input.form-control(type='phone' placeholder='Miles Available to Commute')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-shield
+                    use(xlink:href="assets/img/sprite.svg#shield")
+                input.form-control(type='phone' placeholder='License Number')
+              //end form-group
+            //end sign-up-lg-form__left
+
+            //begin sign-up-lg-form__right
+            .sign-up-lg-form__right
+              //begin form-group
+              .form-group.form-group--input.form-group--input-file
+                .form-group__icon
+                  svg.svg-shield
+                    use(xlink:href="assets/img/sprite.svg#shield")
+                span.form-group__text Upload License
+                input.form-control(type='file')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input.form-group--input-file
+                .form-group__icon
+                  svg.svg-list
+                    use(xlink:href="assets/img/sprite.svg#list")
+                span.form-group__text Upload Resume
+                input.form-control(type='file')
+              //end form-group
+
+              h3.sign-up-lg-form__title Days Available to Work
+
+              include ../elements/slider-range-list
+
+              h3.sign-up-lg-form__title Salary (hourly) rate if request till appointment
+
+              //begin sign-up-lg-form__salary
+              .sign-up-lg-form__salary
+                include ../elements/slider-range-single-list
+              //end sign-up-lg-form__salary
+
+              button.button.button--highlight.button--lg Save
+            //end sign-up-lg-form__right
+        //end sign-up-lg-form
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

@@ -43,32 +43,35 @@
   text-align: center;
   border: 1px solid #ededed;
   border-radius: 50%;
-  background-color: #48b6d8;
 
   @include max(575) {
     width: 156px;
     height: 156px;
   }
-  svg {
-    fill: #fff;
-    width: 48px;
-    height: 83px;
-
-    @include max(575) {
-      width: 28px;
-      height: 48px;
-    }
+  img {
+    display: block;
+    width: 100%;
   }
-  .profile-clinic-ava__text {
-    font-size: 37px;
-    font-weight: 400;
-    max-width: 170px;
-    color: #fff;
-
-    @include max(575) {
-      font-size: 22px;
-    }
-  }
+  //svg {
+  //  fill: #fff;
+  //  width: 48px;
+  //  height: 83px;
+  //
+  //  @include max(575) {
+  //    width: 28px;
+  //    height: 48px;
+  //  }
+  //}
+  //.profile-clinic-ava__text {
+  //  font-size: 37px;
+  //  font-weight: 400;
+  //  max-width: 170px;
+  //  color: #fff;
+  //
+  //  @include max(575) {
+  //    font-size: 22px;
+  //  }
+  //}
 }
 
 .profile-clinic__right {

@@ -1,6 +1,8 @@
 .page-header {
   margin-bottom: 16px;
   padding-top: 90px;
+  position: relative;
+  z-index: 1;
 
   @include max(980) {
     margin-bottom: 0;
