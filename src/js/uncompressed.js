@@ -21,6 +21,7 @@ $(document).ready(function ($) {
     'search-contractor-2',
     'search-results',
     'profile-clinic',
+    'profile-person',
   ]);
 });
 

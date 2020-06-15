@@ -1,0 +1,270 @@
+.profile-person {
+  padding-top: 16px;
+  padding-bottom: 80px;
+
+  @include max(980) {
+    padding-bottom: 20px;
+  }
+}
+
+.profile-person-row {
+  display: flex;
+  margin-bottom: 64px;
+
+  @include max(767) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+}
+
+.profile-person-row--top {
+  align-items: center;
+}
+
+.profile-person-row--middle {
+  @include max(767) {
+    flex-direction: column-reverse;
+  }
+}
+
+.profile-person-row__left {
+  width: 50%;
+  max-width: 384px;
+  padding-right: 120px;
+
+  @include max(980) {
+    padding-right: 60px;
+  }
+  @include max(767) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    padding-right: 0;
+  }
+}
+
+.profile-person-row__right {
+  flex: 1;
+
+  @include max(767) {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+.profile-person-ava {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 264px;
+  text-align: center;
+  border: 1px solid #ededed;
+  border-radius: 50%;
+  background-color: #fff;
+
+  @include max(767) {
+    margin: 0 auto 16px;
+  }
+  @include max(575) {
+    width: 156px;
+    height: 156px;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.profile-person__title {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #000;
+
+  @include max(767) {
+    text-align: center;
+  }
+  @include max(575) {
+    font-size: 24px;
+  }
+}
+
+.profile-person__subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+
+  @include max(767) {
+    text-align: center;
+  }
+  @include max(575) {
+    font-size: 20px;
+  }
+}
+
+.profile-person__rating {
+  display: flex;
+  justify-content: flex-start;
+
+  @include max(767) {
+    justify-content: center;
+  }
+}
+
+////begin #CONTACTS
+.profile-person__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-person__contacts-link {
+  display: flex;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+
+    @include max(767) {
+      margin-bottom: 16px;
+    }
+  }
+  span {
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color .5s;
+    color: #000;
+  }
+  svg {
+    flex: none;
+    fill: #4a4a4a;
+    margin-top: 3px;
+    margin-right: 18px;
+    transition: fill .5s;
+  }
+}
+
+a.profile-person__contacts-link {
+  &:hover {
+    span {
+      color: $link;
+    }
+    svg {
+      fill: $link;
+    }
+  }
+}
+
+////end #CONTACTS
+.profile-person-row__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.profile-person__schedule {
+  @include max(767) {
+    margin-bottom: 32px;
+  }
+}
+
+.profile-person__schedule-row {
+  display: flex;
+  margin-bottom: 8px;
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    width: 50%;
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+//begin #PERSON SALARY
+.profile-person-salary {
+  max-width: 330px;
+}
+
+.profile-person-salary__price-list {
+  display: flex;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+
+.profile-person-salary__price-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  list-style: none;
+  text-align: center;
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 14px 0;
+    strong {
+      color: #4a4a4a;
+    }
+  }
+  &:nth-child(1) {
+    &::before {
+      border-radius: 2px 0 0 2px;
+      background-color: #7ebf34;
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      background-color: #ffbd06;
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      border-radius: 0 2px 2px 0;
+      background-color: #d84b1f;
+    }
+  }
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    content: '';
+  }
+}
+
+.profile-person-salary__time-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-person-salary__time-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.5%;
+  list-style: none;
+  text-align: center;
+  svg {
+    fill: #d4d4d4;
+    width: 10px;
+    height: 14px;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+//end #PERSON SALARY
