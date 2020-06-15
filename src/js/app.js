@@ -19,6 +19,9 @@ $(function() {
   // begin star rating
   require('./modules/rating')();
 
+  // begin subscription indicator
+  require('./modules/indicator')();
+
   // begin phone mask
   // require('./modules/maskedinput')();
 

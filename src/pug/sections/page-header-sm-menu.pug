@@ -1,0 +1,17 @@
+//begin page-header
+header.page-header.page-header--sm
+  .container.container-inn
+    h2.page-header__title #{pageHeaderTitle}
+    //begin page-header-menu
+    .page-header__menu.page-header-menu
+      button.page-header-menu__button
+        +svg('dots')
+      ul.page-header-menu__list
+        li.page-header-menu__item
+          a(href="#").page-header-menu__link Change Password
+        li.page-header-menu__item
+          a(href="#").page-header-menu__link Edit Profile
+        li.page-header-menu__item
+          a(href="#").page-header-menu__link Log out
+    //end page-header-menu
+//end page-header

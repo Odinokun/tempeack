@@ -1,0 +1,66 @@
+extends ../_template
+
+block variables
+  - var title       = 'Profile | Tempeak'
+  - var description = 'Profile | Tempeak'
+  - var ogtitle     = 'Profile | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Profile'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header-profile
+    include ../sections/page-header-sm-menu
+
+    //begin content
+    main.main.profile-clinic
+      .container.container-inn.container-inn--sm
+        //begin profile-clinic__left
+        .profile-clinic__left
+          .profile-clinic__ava.profile-clinic-ava
+            .profile-clinic-ava__svg
+              +svg('flash')
+            .profile-clinic-ava__text Cleveland Clinic
+        //end profile-clinic__left
+
+        //begin profile-clinic__right
+        .profile-clinic__right
+          h3.profile-clinic__title Cleveland Clinic
+          h4.profile-clinic__name John Wesley
+          //begin profile-clinic__contacts
+          .profile-clinic__contacts
+            a(href="https://goo.gl/maps/CVqkLzd656Tig33q7" target="_blank" rel="nofollow noopener noreferrer").profile-clinic__contacts-link
+              svg.svg-marker
+                use(xlink:href="assets/img/sprite.svg#marker")
+              span 2554886, 116-02 Queens Blvd, Thief River Falls, Alabama
+            a(href="tel:2254563255").profile-clinic__contacts-link
+              svg.svg-phone
+                use(xlink:href="assets/img/sprite.svg#phone")
+              span 225 456 3255
+            a(href="mailto:johnwesley@gmail.com").profile-clinic__contacts-link
+              svg.svg-email
+                use(xlink:href="assets/img/sprite.svg#email")
+              span johnwesley@gmail.com
+            a(href="mailto:service@tempeak.com").profile-clinic__contacts-link
+              svg.svg-earth
+                use(xlink:href="assets/img/sprite.svg#earth")
+              span clevelandclinic.com
+          //end profile-clinic__contacts
+            
+          //begin profile-clinic__subscription
+          .profile-clinic__subscription
+            .profile-clinic__subscription-top
+              .profile-clinic__subscription-title Subscription - 3 months
+              a(href="#").profile-clinic__subscription-change Change
+            .profile-clinic__subscription-indicator(data-percent='33')
+              .profile-clinic__subscription-indicator-highlight
+                span
+
+          //end profile-clinic__subscription
+        //end profile-clinic__right
+
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
