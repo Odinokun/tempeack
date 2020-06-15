@@ -20,6 +20,7 @@ $(document).ready(function ($) {
     'search-contractor',
     'search-contractor-2',
     'search-results',
+    'profile-clinic',
   ]);
 });
 

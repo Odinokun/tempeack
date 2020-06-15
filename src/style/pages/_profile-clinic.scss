@@ -1,0 +1,201 @@
+.profile-clinic {
+  padding-top: 16px;
+  padding-bottom: 80px;
+
+  @include max(980) {
+    padding-bottom: 20px;
+  }
+  .container {
+    display: flex;
+
+    @include max(767) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.profile-clinic__left {
+  width: 50%;
+  max-width: 384px;
+  padding-right: 120px;
+
+  @include max(980) {
+    padding-right: 60px;
+  }
+  @include max(767) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.profile-clinic-ava {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 264px;
+  text-align: center;
+  border: 1px solid #ededed;
+  border-radius: 50%;
+  background-color: #48b6d8;
+
+  @include max(575) {
+    width: 156px;
+    height: 156px;
+  }
+  svg {
+    fill: #fff;
+    width: 48px;
+    height: 83px;
+
+    @include max(575) {
+      width: 28px;
+      height: 48px;
+    }
+  }
+  .profile-clinic-ava__text {
+    font-size: 37px;
+    font-weight: 400;
+    max-width: 170px;
+    color: #fff;
+
+    @include max(575) {
+      font-size: 22px;
+    }
+  }
+}
+
+.profile-clinic__right {
+  flex: 1;
+  padding-top: 95px;
+
+  @include max(767) {
+    width: 100%;
+    max-width: 360px;
+    padding-top: 40px;
+  }
+  @include max(575) {
+    padding-top: 16px;
+  }
+}
+
+.profile-clinic__title {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #000;
+
+  @include max(767) {
+    text-align: center;
+  }
+  @include max(575) {
+    font-size: 24px;
+  }
+}
+
+.profile-clinic__name {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+
+  @include max(767) {
+    text-align: center;
+  }
+  @include max(575) {
+    font-size: 20px;
+  }
+}
+
+//begin #CONTACTS
+.profile-clinic__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  padding-top: 55px;
+
+  @include max(767) {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+
+.profile-clinic__contacts-link {
+  display: flex;
+  margin-bottom: 16px;
+  span {
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color .5s;
+    color: #000;
+  }
+  svg {
+    flex: none;
+    fill: #4a4a4a;
+    margin-top: 3px;
+    margin-right: 18px;
+    transition: fill .5s;
+  }
+  &:hover {
+    span {
+      color: $link;
+    }
+    svg {
+      fill: $link;
+    }
+  }
+}
+
+//end #CONTACTS
+
+//begin #SUBSCRIPTION
+.profile-clinic__subscription-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 360px;
+  margin-bottom: 8px;
+}
+
+.profile-clinic__subscription-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.profile-clinic__subscription-change {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a5a5a5;
+}
+
+.profile-clinic__subscription-indicator {
+  max-width: 360px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #ededed;
+}
+
+.profile-clinic__subscription-indicator-highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  transition: width .5s;
+  border-radius: 12px;
+  background-color: $link;
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+//end #SUBSCRIPTION
