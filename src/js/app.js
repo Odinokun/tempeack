@@ -16,6 +16,9 @@ $(function() {
   require('./modules/slider-range')();
   require('./modules/slider-range-single')();
 
+  // begin star rating
+  require('./modules/rating')();
+
   // begin phone mask
   // require('./modules/maskedinput')();
 
