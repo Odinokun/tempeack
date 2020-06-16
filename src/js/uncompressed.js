@@ -26,6 +26,8 @@ $(document).ready(function ($) {
     'edit-profile-person',
     'change-password',
     'delete-profile',
+    'change-subscription',
+    'change-subscription-2',
   ]);
 });
 

@@ -1,0 +1,136 @@
+extends ../_template
+
+block variables
+  - var title       = 'Change Subscription | Tempeak'
+  - var description = 'Change Subscription | Tempeak'
+  - var ogtitle     = 'Change Subscription | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Change Subscription'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header-profile
+    include ../sections/page-header-arr
+
+    //begin content
+    main.main.sign-up-lg
+      .container.container-inn.container-inn--sm
+        //begin sign-up-lg-form
+        .sign-up-lg__form.sign-up-lg-form
+          .sign-up-lg-form__body
+            //begin sign-up-lg-form__left
+            .sign-up-lg-form__left
+              //begin subscription-info
+              .subscription-info
+                //begin subscription-info__item
+                .subscription-info__item
+                  .subscription-info__label
+                    span ID
+                  .subscription-info__text
+                    span sub_GlOfNod90OqcLV
+                //end subscription-info__item
+                //begin subscription-info__item
+                .subscription-info__item
+                  .subscription-info__label
+                    span Customer
+                  .subscription-info__text
+                    span John Wesley Langley
+                //end subscription-info__item
+                //begin subscription-info__item
+                .subscription-info__item
+                  .subscription-info__label
+                    span Current period
+                  .subscription-info__text
+                    span 18 May 2020 - 5 September 1998
+                //end subscription-info__item
+                //begin subscription-info__item
+                .subscription-info__item
+                  .subscription-info__label
+                    span Created
+                  .subscription-info__text
+                    span 18 May 1998
+                //end subscription-info__item
+                //begin subscription-info__item
+                .subscription-info__item
+                  .subscription-info__label
+                    span Status
+                  .subscription-info__text
+                    span.subscription-info__text-yellow Trialing
+                    span.subscription-info__text-green Active
+                    span.subscription-info__text-red Inactive
+                //end subscription-info__item
+
+              //end subscription-info
+            //end sign-up-lg-form__left
+
+            //begin sign-up-lg-form__right
+            .sign-up-lg-form__right
+
+              h3.sign-up-lg-form__title Card
+
+              //begin subscription-card-form
+              form.subscription-card-form
+                //begin form-group
+                .form-group.form-group--input
+                  .form-group__icon
+                    svg.svg-card
+                      use(xlink:href="assets/img/sprite.svg#card")
+                  input.form-control(type='text' placeholder='Card Number')
+                //end form-group
+
+                //begin form-group
+                .form-group.form-group--input.form-group--input-50
+                  .form-group__icon
+                    svg.svg-calendar
+                      use(xlink:href="assets/img/sprite.svg#calendar-2")
+                  input.form-control(type='text' placeholder='MM / YY')
+                //end form-group
+
+                //begin form-group
+                .form-group.form-group--input.form-group--input-50
+                  .form-group__icon
+                    svg.svg-lock
+                      use(xlink:href="assets/img/sprite.svg#lock")
+                  input.form-control(type='password' placeholder='CVC')
+                //end form-group
+
+                //begin form-group
+                .form-group.form-group--input
+                  .form-group__icon
+                    svg.svg-email-open
+                      use(xlink:href="assets/img/sprite.svg#email-open")
+                  input.form-control(type='text' placeholder='Zip Code')
+                //end form-group
+
+                button.button.button--highlight.button--lg Add Card
+              //end subscription-card-form
+
+              h3.sign-up-lg-form__title Subscription
+
+              //begin sign-up-lg-form__subscription
+              .sign-up-lg-form__subscription
+                label.log-in-form__checkbox.log-in-form__checkbox--radio
+                  input.form-check-input(type='radio' name='subscription' checked)
+                  span <i>3 months</i> <strong>$</strong> 299,97
+
+                label.log-in-form__checkbox.log-in-form__checkbox--radio
+                  input.form-check-input(type='radio' name='subscription')
+                  span <i>6 months</i> <strong>$</strong> 539,94
+
+                label.log-in-form__checkbox.log-in-form__checkbox--radio
+                  input.form-check-input(type='radio' name='subscription')
+                  span <i>12 months</i> <strong>$</strong> 959,88
+
+                .sign-up-lg-form__trial
+                  span.sign-up-lg-form__trial-number +1
+                  span.sign-up-lg-form__trial-text month trial
+              //end sign-up-lg-form__subscription
+
+              button.button.button--highlight.button--lg Save
+            //end sign-up-lg-form__right
+        //end sign-up-lg-form
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
