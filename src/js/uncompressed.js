@@ -24,6 +24,7 @@ $(document).ready(function ($) {
     'profile-person',
     'edit-profile-business',
     'edit-profile-person',
+    'change-password',
   ]);
 });
 
