@@ -1,0 +1,29 @@
+.requests {
+  padding-top: 16px;
+  padding-bottom: 80px;
+
+  @include max(980) {
+    padding-bottom: 20px;
+  }
+}
+
+.requests__day {
+  margin-bottom: 16px;
+  .person-card {
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.requests-day__separator {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  text-align: center;
+  color: #000;
+  background-color: #f8f8f8;
+}

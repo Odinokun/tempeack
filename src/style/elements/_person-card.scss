@@ -13,6 +13,9 @@
   height: 170px;
   border: 1px solid #ededed;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 
   @include max(980) {
     width: 70px;
@@ -30,6 +33,14 @@
     object-fit: cover;
     object-position: center;
   }
+}
+
+.person-card__ava--person {
+  background-image: url('../img/bg-ava-person.jpg');
+}
+
+.person-card__ava--business {
+  background-image: url('../img/bg-ava-business.jpg');
 }
 
 .person-card__info {
@@ -248,6 +259,77 @@
       @include max(980) {
         margin-left: 1px;
       }
+    }
+  }
+}
+
+.person-card--request {
+  .button {
+    min-height: 48px;
+    padding: 11px 20px 8px 20px;
+
+    @include max(980) {
+      width: 32px;
+      height: 32px;
+      min-height: 0;
+      padding: 0;
+    }
+    svg {
+      margin-left: auto;
+
+      @include max(980) {
+        margin-left: -1px;
+      }
+    }
+  }
+  .button--waiting {
+    background-color: #4a4a4a;
+    &:hover {
+      background-color: lighten(#4a4a4a, 10%);
+    }
+    svg {
+      width: 9px;
+      height: 15px;
+    }
+  }
+  .button--accepted {
+    background-color: #ffbd06;
+    &:hover {
+      background-color: lighten(#ffbd06, 10%);
+    }
+    svg {
+      width: 18px;
+      height: 14px;
+    }
+  }
+  .button--completed {
+    background-color: #7ebf34;
+    &:hover {
+      background-color: lighten(#7ebf34, 10%);
+    }
+    svg {
+      width: 18px;
+      height: 14px;
+    }
+  }
+  .button--declined {
+    background-color: #d84b1f;
+    &:hover {
+      background-color: lighten(#d84b1f, 10%);
+    }
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .button--canceled {
+    background-color: #d84b1f;
+    &:hover {
+      background-color: lighten(#d84b1f, 10%);
+    }
+    svg {
+      width: 19px;
+      height: 17px;
     }
   }
 }

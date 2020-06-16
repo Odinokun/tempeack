@@ -28,6 +28,8 @@ $(document).ready(function ($) {
     'delete-profile',
     'change-subscription',
     'change-subscription-2',
+    'requests-person',
+    'requests-business',
   ]);
 });
 
