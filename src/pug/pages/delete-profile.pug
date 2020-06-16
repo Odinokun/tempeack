@@ -1,0 +1,37 @@
+extends ../_template
+
+block variables
+  - var title       = 'Delete Profile | Tempeak'
+  - var description = 'Delete Profile | Tempeak'
+  - var ogtitle     = 'Delete Profile | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Delete Profile'
+
+block content
+  .main-wrap.no-js
+    include ../sections/header-profile
+    include ../sections/page-header-arr-center
+
+    //begin content
+    main.main.log-in
+      .container.container-inn.container-inn--sm
+        form.log-in__form.log-in-form
+          //begin log-in-form__body
+          .log-in-form__body
+            .delete-profile__text
+              p Do you really want to delete your profile? If no, close this window. If yes, please type following word: DELETE
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                svg.svg-trash
+                  use(xlink:href="assets/img/sprite.svg#trash")
+              input.form-control(type='password' placeholder='Delete')
+            //end form-group
+
+            button.button.button--delete.button--lg Delete
+          //end log-in-form__body
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
