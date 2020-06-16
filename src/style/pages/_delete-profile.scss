@@ -1,0 +1,12 @@
+.delete-profile__text {
+  margin-bottom: 22px;
+}
+
+.button--delete {
+  color: #acacac;
+  background-color: #dcdcdc;
+  &:hover {
+    color: #fff;
+    background-color: #d84b1f;
+  }
+}

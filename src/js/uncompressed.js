@@ -25,6 +25,7 @@ $(document).ready(function ($) {
     'edit-profile-business',
     'edit-profile-person',
     'change-password',
+    'delete-profile',
   ]);
 });
 
