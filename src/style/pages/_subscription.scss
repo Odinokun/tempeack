@@ -1,0 +1,71 @@
+
+.subscription-info__item {
+  margin-bottom: 16px;
+}
+
+.subscription-info__label {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.subscription-info__text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.subscription-info__text-yellow,
+.subscription-info__text-green,
+.subscription-info__text-red {
+  padding-right: 10px;
+}
+
+.subscription-info__text-yellow {
+  color: #ffbd06;
+}
+
+.subscription-info__text-green {
+  color: #7ebf34;
+}
+
+.subscription-info__text-red {
+  color: #d84b1f;
+}
+
+//begin #FORM
+.subscription-card-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  padding-top: 8px;
+  .form-group--input {
+    width: 100%;
+  }
+  .form-group--input-50 {
+    width: calc(50% - 8px);
+
+    @include max(340) {
+      width: 100%;
+    }
+  }
+}
+
+//end #FORM
+.subscription-card-del__number{
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  padding-top: 8px;
+}
+.subscription-card-del__button{
+  margin-bottom: 34px;
+  .button {
+
+  background-color: #d84b1f;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+    background-color: lighten(#d84b1f, 10%);;
+  }
+  }
+}
