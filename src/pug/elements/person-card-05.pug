@@ -1,0 +1,59 @@
+//begin person-card
+.person-card.person-card--request
+  .person-card__ava.person-card__ava--person
+    img(src="assets/img/user-03.jpg" alt="picture")
+  .person-card__info
+    h3.person-card__name John Wesley Langley
+    span.person-card__position Thief River Falls
+    //begin person-card__info
+    .person-card__info-row
+      //begin person-card-rating
+      .person-card__rating.person-card-rating(data-rating='3.5')
+        .person-card-rating__stars.person-card-rating__stars--full
+          svg.rating-star.rating-star--full
+            use(xlink:href="assets/img/sprite.svg#star-rating-full")
+          svg.rating-star.rating-star--full
+            use(xlink:href="assets/img/sprite.svg#star-rating-full")
+          svg.rating-star.rating-star--full
+            use(xlink:href="assets/img/sprite.svg#star-rating-full")
+          svg.rating-star.rating-star--full
+            use(xlink:href="assets/img/sprite.svg#star-rating-full")
+          svg.rating-star.rating-star--full
+            use(xlink:href="assets/img/sprite.svg#star-rating-full")
+
+        .person-card-rating__filter
+        .person-card-rating__value
+
+        .person-card-rating__stars.person-card-rating__stars--transparent
+          svg.rating-star.rating-star--transparent
+            use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+          svg.rating-star.rating-star--transparent
+            use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+          svg.rating-star.rating-star--transparent
+            use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+          svg.rating-star.rating-star--transparent
+            use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+          svg.rating-star.rating-star--transparent
+            use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+      //end person-card-rating
+      //begin person-card-salary
+      .person-card__salary.person-card-salary
+        span.person-card-salary__text Salary range
+        i $
+        span.person-card-salary__value 10
+      //end person-card-salary
+      //begin person-card-experience
+      .person-card__experience.person-card-experience
+        span.person-card-experience__text Experience
+        svg.svg-clock
+          use(xlink:href="assets/img/sprite.svg#clock")
+        span.person-card-experience__value 1-2 years
+      //end person-card-experience
+
+    //end person-card__info
+
+  .person-card__button
+    button.button.button--completed
+      span Completed
+      +svg('check')
+//end person-card

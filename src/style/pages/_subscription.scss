@@ -1,4 +1,3 @@
-
 .subscription-info__item {
   margin-bottom: 16px;
 }
@@ -51,21 +50,21 @@
 }
 
 //end #FORM
-.subscription-card-del__number{
+.subscription-card-del__number {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 16px;
   padding-top: 8px;
 }
-.subscription-card-del__button{
+
+.subscription-card-del__button {
   margin-bottom: 34px;
   .button {
-
-  background-color: #d84b1f;
-  color: #ffffff;
-  &:hover {
-    color: #ffffff;
-    background-color: lighten(#d84b1f, 10%);;
-  }
+    color: #fff;
+    background-color: #d84b1f;
+    &:hover {
+      color: #fff;
+      background-color: lighten(#d84b1f, 10%);;
+    }
   }
 }
