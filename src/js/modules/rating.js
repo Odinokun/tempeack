@@ -14,7 +14,6 @@ module.exports = function() {
       $(filter).css('transform', 'translateX(' + transformVal + '%)');
       //выводим значение рейтинга текстом
       $(ratingValText).text(rating);
-
     }
   });
   // end rating
