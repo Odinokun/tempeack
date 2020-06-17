@@ -35,6 +35,7 @@ $(document).ready(function ($) {
     'request-person-3',
     'request-person-4',
     'request-person-5',
+    'request-person-6',
   ]);
 });
 
