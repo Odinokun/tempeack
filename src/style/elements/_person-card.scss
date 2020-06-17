@@ -333,3 +333,31 @@
     }
   }
 }
+
+.profile-person__request-info {
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 550px;
+  min-height: 94px;
+  margin: 0 0 32px 0;
+  padding: 16px 32px;
+  text-align: center;
+  color: #4a4a4a;
+  border: 1px dashed #dcdcdc;
+  border-radius: $block-radius;
+
+  @include max(767) {
+    margin: 0 0 16px 0;
+  }
+}
+
+.profile-person__request-del-button {
+  font-size: 20px;
+  width: 100%;
+  max-width: 360px;
+  height: 48px;
+  background-color: #d84b1f;
+  &:hover {
+    background-color: lighten(#d84b1f, 10%);
+  }
+}

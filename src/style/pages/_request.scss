@@ -1,0 +1,45 @@
+.request {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  .profile-person-row--top {
+    align-items: stretch;
+
+    @include max(767) {
+      align-items: center;
+    }
+
+    .profile-person-row__right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .profile-person__rating {
+      padding-top: 8px;
+    }
+    .rating-star {
+      display: block !important;
+    }
+    .person-card-rating__value {
+      display: none !important;
+    }
+    .profile-person__contacts-link {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include max(767) {
+        position: relative;
+        margin-top: 24px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .profile-person__salary {
+    margin-bottom: 52px;
+
+    @include max(767) {
+      margin-bottom: 32px;
+    }
+  }
+}

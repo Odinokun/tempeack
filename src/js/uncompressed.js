@@ -30,6 +30,11 @@ $(document).ready(function ($) {
     'change-subscription-2',
     'requests-person',
     'requests-business',
+    'request-person-1',
+    'request-person-2',
+    'request-person-3',
+    'request-person-4',
+    'request-person-5',
   ]);
 });
 

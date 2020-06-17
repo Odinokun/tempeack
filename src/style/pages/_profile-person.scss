@@ -5,6 +5,12 @@
   @include max(980) {
     padding-bottom: 20px;
   }
+  .rating-star {
+    display: block !important;
+  }
+  .person-card-rating__value {
+    display: none !important;
+  }
 }
 
 .profile-person-row {
