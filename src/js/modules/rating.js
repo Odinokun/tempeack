@@ -18,4 +18,14 @@ module.exports = function() {
   });
   // end rating
 
+  //begin CLICK rating
+  $('.rating-star--transparent').on('click', function () {
+    let clickRating = $(this).data('rating');
+    let filter = $('.click-rating__stars').find('.person-card-rating__filter');
+    let transformVal = clickRating / (5 / 100);
+
+    $(filter).css('transform', 'translateX(' + transformVal + '%)');
+  });
+  //end CLICK rating
+
 };

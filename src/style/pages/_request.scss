@@ -43,3 +43,73 @@
     }
   }
 }
+
+.click-rating {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 32px 16px;
+  text-align: center;
+  border-radius: $block-radius;
+  background-color: #fffaec;
+
+  @include max(575) {
+    padding: 16px;
+  }
+  .rating-star--transparent {
+    cursor: pointer;
+  }
+  .rating-star {
+    display: block !important;
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .person-card-rating__filter {
+    height: 25px !important;
+  }
+  .person-card-rating__value {
+    display: none !important;
+  }
+}
+
+.click-rating__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  svg {
+    fill: #ffbd06;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.click-rating__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: #000;
+
+  @include max(575) {
+    max-width: calc(100% - 40px);
+  }
+}
+
+.click-rating__stars {
+  margin-bottom: 32px;
+
+  @include max(575) {
+    margin-bottom: 16px;
+  }
+}
+
+.click-rating__button {
+  font-size: 20px;
+  max-width: 360px;
+  height: 48px;
+}
