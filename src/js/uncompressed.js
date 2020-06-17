@@ -36,6 +36,11 @@ $(document).ready(function ($) {
     'request-person-4',
     'request-person-5',
     'request-person-6',
+    'request-clinic-1',
+    'request-clinic-2',
+    'request-clinic-3',
+    'request-clinic-4',
+    'request-clinic-5',
   ]);
 });
 

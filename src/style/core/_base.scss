@@ -153,7 +153,6 @@ svg {
   font-weight: 400;
   line-height: 1;
   display: flex;
-  outline: none !important;
   justify-content: center;
   align-items: center;
   padding: 16px 32px;
@@ -165,6 +164,7 @@ svg {
   color: #fff;
   border: none;
   border-radius: 25px !important;
+  outline: none !important;
   background-color: $highlight;
   box-shadow: none;
   svg {
@@ -187,6 +187,13 @@ svg {
   background-color: $link;
   &:hover {
     background-color: $link-hov;
+  }
+}
+
+.button--red {
+  background-color: #d84b1f;
+  &:hover {
+    background-color: lighten(#d84b1f, 10%);
   }
 }
 

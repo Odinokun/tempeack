@@ -202,3 +202,60 @@
 }
 
 //end #SUBSCRIPTION
+
+//begin #MAP
+.container-inn--map {
+  .profile-clinic__right {
+    padding-top: 0;
+
+    @include max(767) {
+      max-width: 100%;
+    }
+  }
+}
+
+.profile-clinic__map {
+  position: relative;
+  height: 256px;
+  margin-top: -36px;
+  margin-bottom: 32px;
+
+  @include max(767) {
+    width: calc(100% + 32px);
+    margin-top: -16px;
+    margin-left: -16px;
+  }
+
+  .gmnoprint {
+    display: none;
+  }
+}
+
+.profile-clinic__map-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  @include max(767) {
+    flex-direction: column;
+  }
+  .button {
+    font-size: 20px;
+    max-width: 360px;
+    height: 48px;
+    margin-bottom: 16px;
+
+    @include max(767) {
+      max-width: 100%;
+    }
+  }
+}
+
+.profile-clinic__map-button {
+  width: calc(50% - 8px);
+
+  @include max(767) {
+    width: 100%;
+  }
+}
+
+//end #MAP

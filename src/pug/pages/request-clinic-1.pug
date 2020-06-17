@@ -1,0 +1,83 @@
+extends ../_template
+
+block variables
+  - var title       = 'Request | Tempeak'
+  - var description = 'Request | Tempeak'
+  - var ogtitle     = 'Request | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Request'
+
+block content
+  .main-wrap
+    include ../sections/header-profile
+    include ../sections/page-header-request-1
+
+    //begin content
+    main.main.profile-clinic
+      .container.container-inn.container-inn--sm
+        //begin profile-clinic__left
+        .profile-clinic__left
+          .profile-clinic__ava.profile-clinic-ava
+            .profile-clinic-ava__pic
+              img(src="assets/img/clinic-logo.jpg" alt="picture")
+        //end profile-clinic__left
+
+        //begin profile-clinic__right
+        .profile-clinic__right
+          h3.profile-clinic__title Cleveland Clinic
+          h4.profile-clinic__subtitle John Wesley
+          //begin profile-clinic__contacts
+          .profile-clinic__contacts
+            a(href="https://goo.gl/maps/CVqkLzd656Tig33q7" target="_blank" rel="nofollow noopener noreferrer").profile-clinic__contacts-link
+              svg.svg-marker
+                use(xlink:href="assets/img/sprite.svg#marker")
+              span 2554886, 116-02 Queens Blvd, Thief River Falls, Alabama
+            a(href="tel:2254563255").profile-clinic__contacts-link
+              svg.svg-phone
+                use(xlink:href="assets/img/sprite.svg#phone")
+              span 225 456 3255
+            a(href="mailto:johnwesley@gmail.com").profile-clinic__contacts-link
+              svg.svg-email
+                use(xlink:href="assets/img/sprite.svg#email")
+              span johnwesley@gmail.com
+            a(href="mailto:service@tempeak.com").profile-clinic__contacts-link
+              svg.svg-earth
+                use(xlink:href="assets/img/sprite.svg#earth")
+              span clevelandclinic.com
+          //end profile-clinic__contacts
+        //end profile-clinic__right
+
+      .container.container-inn.container-inn--sm.container-inn--map
+        //begin profile-clinic__left
+        .profile-clinic__left
+        //end profile-clinic__left
+        //begin profile-clinic__right
+        .profile-clinic__right
+          //begin profile-clinic__map
+          .profile-clinic__map#map
+          //end profile-clinic__map
+        //end profile-clinic__right
+
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
+    script.
+      function initMap() {
+        var myLatLng = {lat: 40.715600, lng: -73.833478};
+        var windowWidth = document.documentElement.clientWidth;
+        console.log(windowWidth);
+        var mapCenter = myLatLng;
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: mapCenter
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Cleveland Clinic'
+        });
+      }
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdGbaaf94NCuCkoH98Ry12HA59U0eTqIA&callback=initMap")
