@@ -1,0 +1,151 @@
+extends ../_template
+
+block variables
+  - var title       = 'Request | Tempeak'
+  - var description = 'Request | Tempeak'
+  - var ogtitle     = 'Request | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Request'
+
+block content
+  .main-wrap
+    include ../sections/header-profile
+    include ../sections/page-header-request-5
+
+    //begin content
+    main.main.request
+      .container.container-inn.container-inn--sm
+        //begin profile-person__row
+        .profile-person__row.profile-person-row.profile-person-row--top
+          //begin profile-person-row__left
+          .profile-person-row__left
+            .profile-person__ava.profile-person-ava
+              .profile-person-ava__pic
+                img(src="assets/img/profile-person.jpg" alt="picture")
+          //end profile-person-row__left
+
+          //begin profile-person-row__right
+          .profile-person-row__right
+            h3.profile-person__title John Wesley Langley
+            h4.profile-person__subtitle Business Coordinator
+            .profile-person__rating
+              //begin person-card-rating
+              .person-card__rating.person-card-rating(data-rating='3.5')
+                .person-card-rating__stars.person-card-rating__stars--full
+                  svg.rating-star.rating-star--full
+                    use(xlink:href="assets/img/sprite.svg#star-rating-full")
+                  svg.rating-star.rating-star--full
+                    use(xlink:href="assets/img/sprite.svg#star-rating-full")
+                  svg.rating-star.rating-star--full
+                    use(xlink:href="assets/img/sprite.svg#star-rating-full")
+                  svg.rating-star.rating-star--full
+                    use(xlink:href="assets/img/sprite.svg#star-rating-full")
+                  svg.rating-star.rating-star--full
+                    use(xlink:href="assets/img/sprite.svg#star-rating-full")
+
+                .person-card-rating__filter
+                .person-card-rating__value
+
+                .person-card-rating__stars.person-card-rating__stars--transparent
+                  svg.rating-star.rating-star--transparent
+                    use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+                  svg.rating-star.rating-star--transparent
+                    use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+                  svg.rating-star.rating-star--transparent
+                    use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+                  svg.rating-star.rating-star--transparent
+                    use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+                  svg.rating-star.rating-star--transparent
+                    use(xlink:href="assets/img/sprite.svg#star-rating-transparent")
+              //end person-card-rating
+          //end profile-person-row__right
+        //end profile-person__row
+
+        //begin profile-person__row
+        .profile-person__row.profile-person-row.profile-person-row--middle
+          //begin profile-person-row__left
+          .profile-person-row__left
+            //begin profile-person__contacts
+            .profile-person__contacts
+              .profile-person__contacts-link
+                svg.svg-clock
+                  use(xlink:href="assets/img/sprite.svg#clock")
+                span 1-2 years
+              .profile-person__contacts-link
+                svg.svg-shield
+                  use(xlink:href="assets/img/sprite.svg#shield")
+                span 5635292254563255
+              a(href="#" target="_blank" rel="nofollow noopener noreferrer").profile-person__contacts-link
+                svg.svg-shield
+                  use(xlink:href="assets/img/sprite.svg#shield")
+                span Download License
+            //end profile-person__contacts
+          //end profile-person-row__left
+
+          //begin profile-person-row__right
+          .profile-person-row__right
+            //begin profile-person__contacts
+            .profile-person__contacts
+              a(href="tel:2254563255").profile-person__contacts-link
+                svg.svg-phone
+                  use(xlink:href="assets/img/sprite.svg#phone")
+                span 225 456 3255
+              a(href="mailto:johnwesley@gmail.com").profile-person__contacts-link
+                svg.svg-email
+                  use(xlink:href="assets/img/sprite.svg#email")
+                span johnwesley@gmail.com
+            //end profile-person__contacts
+          //end profile-person-row__right
+        //end profile-person__row
+
+        //begin profile-person__row
+        .profile-person__row.profile-person-row
+          //begin profile-person-row__left
+          .profile-person-row__left
+            h3.profile-person-row__title Working days
+            //begin profile-person__schedule
+            .profile-person__schedule
+              .profile-person__schedule-row
+                span Monday
+                span 09:30 - 13:30
+              .profile-person__schedule-row
+                span Tuesday
+                span 09:30 - 13:30
+              .profile-person__schedule-row
+                span Wednesday
+                span 09:30 - 13:30
+            //end profile-person__schedule
+          //end profile-person-row__left
+
+          //begin profile-person-row__right
+          .profile-person-row__right
+            h3.profile-person-row__title Salary (hourly) rate if request till appointment
+            //begin profile-person__salary
+            .profile-person__salary.profile-person-salary
+              ul.profile-person-salary__price-list
+                li.profile-person-salary__price-item
+                  span <strong>$</strong>10
+                li.profile-person-salary__price-item
+                  span <strong>$</strong>12
+                li.profile-person-salary__price-item
+                  span <strong>$</strong>14
+              ul.profile-person-salary__time-list
+                li.profile-person-salary__time-item
+                  +svg('arr-right')
+                li.profile-person-salary__time-item
+                  span 48 h
+                li.profile-person-salary__time-item
+                  +svg('arr-right')
+                li.profile-person-salary__time-item
+                  span 12 h
+                li.profile-person-salary__time-item
+                  +svg('arr-right')
+            //end profile-person__salary
+          //end profile-person-row__right
+        //end profile-person__row
+
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts
