@@ -41,6 +41,7 @@ $(document).ready(function ($) {
     'request-clinic-3',
     'request-clinic-4',
     'request-clinic-5',
+    '404',
   ]);
 });
 

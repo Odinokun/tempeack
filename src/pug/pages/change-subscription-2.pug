@@ -83,17 +83,17 @@ block content
               .sign-up-lg-form__subscription
                 label.log-in-form__checkbox.log-in-form__checkbox--radio
                   input.form-check-input(type='radio' name='subscription' checked)
-                  span <i>3 months</i> <strong>$</strong> 299,97
+                  span <i>3 months + 1 month trial</i> <strong>$</strong> 299,97
 
                 label.log-in-form__checkbox.log-in-form__checkbox--radio
                   input.form-check-input(type='radio' name='subscription')
-                  span <i>6 months</i> <strong>$</strong> 539,94
+                  span <i>6 months + 1 month trial</i> <strong>$</strong> 539,94
 
                 label.log-in-form__checkbox.log-in-form__checkbox--radio
                   input.form-check-input(type='radio' name='subscription')
-                  span <i>12 months</i> <strong>$</strong> 959,88
+                  span <i>12 months + 1 month trial</i> <strong>$</strong> 959,88
 
-                .sign-up-lg-form__trial
+                //-.sign-up-lg-form__trial
                   span.sign-up-lg-form__trial-number +1
                   span.sign-up-lg-form__trial-text month trial
               //end sign-up-lg-form__subscription
@@ -103,6 +103,5 @@ block content
         //end sign-up-lg-form
     //end content
 
-    include ../elements/footer-menu
-    include ../sections/footer
+    include ../sections/footer-lg
     include ../sections/scripts

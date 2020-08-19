@@ -180,7 +180,8 @@
     left: auto;
     transform: translateX(0);
   }
-  &:hover {
+  &.active {
+    //&:hover {
     .page-header-menu__list {
       pointer-events: auto;
       opacity: 1;

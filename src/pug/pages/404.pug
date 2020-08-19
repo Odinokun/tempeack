@@ -1,0 +1,26 @@
+extends ../_template
+
+block variables
+  - var title       = 'Tempeak'
+  - var description = 'Tempeak'
+  - var ogtitle     = 'Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Let\'s Find'
+
+block content
+  .main-wrap
+    include ../sections/header
+
+    //begin content
+    main.main.errorpage
+      .container
+        .errorpage__content
+          h2.errorpage__title 404
+          h3.errorpage__subtitle page not found
+          button.button.button--grey.button--lg go back to mainpage
+
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

@@ -91,7 +91,6 @@
     display: block;
     max-width: 100%;
     max-height: 93px;
-
     object-fit: contain;
     object-position: center;
   }
@@ -125,6 +124,7 @@
       font-style: normal;
       display: block;
       min-width: 92px;
+      padding-right: 8px;
     }
     strong {
       padding-right: 3px;
