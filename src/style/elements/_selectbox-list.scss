@@ -11,7 +11,7 @@
     border-bottom: none;
   }
   &.disabled {
-    pointer-events: none;
+    //pointer-events: none;
     .log-in-form__checkbox,
     .form-group {
       opacity: .6;
