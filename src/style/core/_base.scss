@@ -60,22 +60,6 @@ ul {
   }
 }
 
-//ul {
-//  li {
-//    // путь к кастомной картинке пункта ul
-//    // list-style-image: url('../img/ul.png');
-//  }
-//}
-//
-////кастомные пункты списка с цифрами
-//ol {
-//  // list-style: none;
-//  // @include counter(li);
-//  li::before {
-//    // color: $brand;
-//  }
-//}
-//
 input,
 textarea,
 select,
@@ -84,46 +68,15 @@ button {
   outline: none;
 }
 
-//input {
-//  padding: 3px 10px 5px 10px;
-//  color: $text;
-//  border: 1px solid $text;
-//  &::placeholder {
-//    @include placeholder-color($text);
-//  }
-//}
-//
-//textarea {
-//  resize: none;
-//}
-
-//input.error,
-//textarea.error {
-//  border-color: #ed1b24 !important;
-//  background: #fbd1d3 !important;
-//}
-//
 svg {
   display: block;
   overflow: visible;
 }
 
-////изменяем цвет выделения текста мышью
-//::selection {
-//  // background-color: $brand;
-//  // color: $brand;
-//  // text-shadow: none;
-//}
-//
 .main-wrap {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  //свойство для исправления бага 100vh для мобильных
-  min-height: -moz-available;
-  min-height: -webkit-fill-available;
-  min-height: fill-available;
-  //свойство для плавной прокрутки на яблоках
 
   -webkit-overflow-scrolling: touch;
   &.no-scroll {

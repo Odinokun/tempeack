@@ -57,8 +57,11 @@
     }
   }
   .page-header__title {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
     @include max(575) {
-      margin-right: 0;
+      margin-left: 32px !important;
     }
   }
 }
