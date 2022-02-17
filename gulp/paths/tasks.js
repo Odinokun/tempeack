@@ -4,6 +4,7 @@ module.exports = [
   './gulp/tasks/pug.js',
 
   './gulp/tasks/sass.js',
+  './gulp/tasks/sass2.js',
   './gulp/tasks/css.foundation.js',
 
   './gulp/tasks/js.lint.js',

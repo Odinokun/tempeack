@@ -82,3 +82,13 @@ function pageWidget(pages) {
 //====== Begin Programmer code ======
 
 
+//begin menu
+$('.search-result__open').on('click', function (e) {
+  e.preventDefault();
+  $('.search-result').addClass('active');
+});
+$('.search-result__icon-arrow').on('click', function (e) {
+  e.preventDefault();
+  $('.search-result').removeClass('active');
+});
+//end menu
