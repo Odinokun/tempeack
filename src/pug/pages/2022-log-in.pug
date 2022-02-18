@@ -1,0 +1,54 @@
+extends ../_template
+
+block variables
+  - var title       = 'Log in | Tempeak'
+  - var description = 'Log in | Tempeak'
+  - var ogtitle     = 'Log in | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Log in'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../sections/page-header-sm-center
+
+    //begin content
+    main.main.log-in.log-in-2022
+      .container.container-inn.container-inn--sm
+        form.log-in__form.log-in-form
+          //begin log-in-form__body
+          .log-in-form__body
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                svg.svg-email
+                  use(xlink:href="assets/img/sprite.svg#email")
+              input.form-control(type='email' placeholder='Email Address')
+            //end form-group
+
+            //begin form-group
+            .form-group.form-group--input
+              .form-group__icon
+                svg.svg-lock
+                  use(xlink:href="assets/img/sprite.svg#lock")
+              input.form-control(type='password' placeholder='Password')
+            //end form-group
+
+            .log-in-form__row
+              label.log-in-form__checkbox.log-in-form__checkbox--radio
+                input.form-check-input(type='checkbox')
+                span Remember me
+              a(href="#").log-in-form__forgot-link Forgot password?
+
+            button.button.button--highlight.button--lg Log in
+            span.log-in-2022__text or
+            button.button.button--red.button--lg.button--google Google
+            button.button.button--blue.button--lg.button--facebook Facebook
+            span.log-in-2022__text New user?
+            button.button.button--grey.button--lg.button--signup Sign up
+          //end log-in-form__body
+    //end content
+
+    include ../sections/footer-lg-with-apps
+    include ../sections/scripts

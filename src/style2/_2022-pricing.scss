@@ -7,10 +7,24 @@
 
   .pricing__month {
     font-size: 22px;
+
+    @include min(768) {
+      font-size: 19px;
+    }
+    @include min(992) {
+      font-size: 22px;
+    }
   }
 
   .pricing__price {
     font-size: 30px;
+
+    @include min(768) {
+      font-size: 27px;
+    }
+    @include min(992) {
+      font-size: 30px;
+    }
   }
 
   .pricing__month,
@@ -19,6 +33,13 @@
     width: 100%;
     max-width: 110px;
     text-align: left;
+
+    @include min(768) {
+      max-width: 95px;
+    }
+    @include min(992) {
+      max-width: 110px;
+    }
   }
 }
 

@@ -1,0 +1,41 @@
+.log-in-2022__text {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 27px;
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  color: #000;
+}
+
+.button--blue {
+  background-color: #4267b2;
+
+  &:hover {
+    background-color: lighten(#4267b2, 10%);
+  }
+}
+
+.button--google {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  background-color: #db4437;
+  background-image: url('../img/google.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+
+  &:hover {
+    background-color: lighten(#db4437, 10%);
+  }
+}
+
+.button--facebook {
+  margin-bottom: 32px;
+  background-image: url('../img/facebook.svg');
+  background-repeat: no-repeat;
+  background-position: 20px 50%;
+}
+
+.button--signup {
+  margin-top: 8px;
+}
