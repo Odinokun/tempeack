@@ -1,0 +1,62 @@
+extends ../_template
+
+block variables
+  - var title       = 'Pricing | Tempeak'
+  - var description = 'Pricing | Tempeak'
+  - var ogtitle     = 'Pricing | Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Pricing'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../sections/page-header-sm
+
+    //begin content
+    main.main.pricing
+      .container.container-inn.container-inn--sm
+
+        //begin pricing__wrap
+        .pricing__wrap.pricing__wrap--contractors
+          .pricing__list-wrap
+            h3.pricing__title Contractors
+            //begin pricing__list
+            ul.pricing__list
+              li.pricing__item.pricing-2022__item.pricing-2022__item--free
+                .pricing__info
+                  h4.pricing-2022__free Free
+            //end pricing__list
+        //end pricing__wrap
+
+        //begin pricing__wrap
+        .pricing__wrap.pricing__wrap--middle
+        //end pricing__wrap
+
+        //begin pricing__wrap
+        .pricing__wrap.pricing__wrap--business
+          .pricing__list-wrap
+            h3.pricing__title Business owners
+            //begin pricing__list
+            ul.pricing__list
+              li.pricing__item.pricing-2022__item
+                .pricing__info
+                  .pricing__month 3 months
+                  .pricing__price $99.99
+                  .pricing__subprice per month
+              li.pricing__item.pricing-2022__item
+                .pricing__info
+                  .pricing__month 6 months
+                  .pricing__price $89.99
+                  .pricing__subprice per month
+              li.pricing__item.pricing-2022__item
+                .pricing__info
+                  .pricing__month 12 months
+                  .pricing__price $79.99
+                  .pricing__subprice per month
+            //end pricing__list
+        //end pricing__wrap
+    //end content
+
+    include ../sections/footer-lg-with-apps
+    include ../sections/scripts

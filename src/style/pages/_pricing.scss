@@ -5,6 +5,7 @@
   @include max(980) {
     padding-bottom: 20px;
   }
+
   .container-inn {
     display: flex;
     justify-content: space-between;
@@ -95,11 +96,13 @@
   @include max(575) {
     margin-bottom: 16px;
   }
+
   &::before {
     display: block;
     padding-top: 100%;
     content: '';
   }
+
   .pricing__info {
     position: absolute;
     top: 0;

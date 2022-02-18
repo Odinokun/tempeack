@@ -1,0 +1,19 @@
+.footer-apps {
+  display: flex;
+}
+
+.footer-apps__link {
+  display: block;
+  flex: none;
+  max-width: 100px;
+  margin-right: 20px;
+
+  @include max(767) {
+    margin-bottom: 16px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
