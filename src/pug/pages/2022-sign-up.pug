@@ -1,0 +1,30 @@
+extends ../_template
+
+block variables
+  - let title       = 'Sign Up | Tempeak'
+  - let description = 'Sign Up | Tempeak'
+  - let ogtitle     = 'Sign Up | Tempeak'
+  - let ogimage     = 'assets/img/social.jpg'
+
+  - let pageHeaderTitle = 'Sign up'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../sections/page-header-sm-center
+
+    //begin content
+    main.main.log-in
+      .container.container-inn.container-inn--sm
+        form.log-in__form.log-in-form.log-in-form--sign-up
+          .sign-up-form__tab-buttons
+            button(data-tab='#sign-up-business-form').sign-up-form__tab-button.active Business Owner
+            button(data-tab='#sign-up-contractor-form').sign-up-form__tab-button Contractor
+
+          include ../sections/sign-up-business-form
+          include ../sections/sign-up-contractor-form
+
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

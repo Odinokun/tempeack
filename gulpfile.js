@@ -34,6 +34,7 @@ $.gulp.task('default', $.gulp.series(
     'css:foundation',
     'js:foundation',
     'js:app-browserify',
+    'js:app-browserify2',
     'copy:js',
     'copy:css',
     'copy:fonts',

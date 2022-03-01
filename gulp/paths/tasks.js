@@ -9,6 +9,7 @@ module.exports = [
 
   './gulp/tasks/js.lint.js',
   './gulp/tasks/js.app-browserify.js',
+  './gulp/tasks/js.app-browserify2.js',
   './gulp/tasks/js.foundation.js',
 
   './gulp/tasks/sprite.svg.js',

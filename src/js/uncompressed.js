@@ -5,6 +5,7 @@
 
 $(document).ready(function ($) {
   pageWidget([
+    '2022-sign-up',
     '2022-log-in',
     '2022-pricing',
     'index',

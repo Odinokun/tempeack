@@ -1,17 +1,17 @@
 extends ../_template
 
 block variables
-  - var title       = 'Log in | Tempeak'
-  - var description = 'Log in | Tempeak'
-  - var ogtitle     = 'Log in | Tempeak'
-  - var ogimage     = 'assets/img/social.jpg'
+  - let title       = 'Log in | Tempeak'
+  - let description = 'Log in | Tempeak'
+  - let ogtitle     = 'Log in | Tempeak'
+  - let ogimage     = 'assets/img/social.jpg'
 
-  - var pageHeaderTitle = 'Log in'
+  - let pageHeaderTitle = 'Log in'
 
 block content
   .main-wrap
     include ../sections/header
-    include ../sections/page-header-sm-center
+    include ../sections/page-header-sm-center-all
 
     //begin content
     main.main.log-in.log-in-2022

@@ -1,7 +1,6 @@
 module.exports = function() {
 
   //begin FAQ tabs
-
   $('.faq__buttons .button').on('click', function (e) {
     e.preventDefault();
     let tabVal = $(this).data('tab');
@@ -11,9 +10,7 @@ module.exports = function() {
 
     $(this).addClass('active');
     $(tabVal).fadeIn();
-
   });
-
   //end FAQ tabs
 
 };
