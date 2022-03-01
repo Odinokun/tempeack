@@ -12,30 +12,43 @@
 
 .sign-up-form__tab-buttons {
   display: flex;
-  width: calc(100% + 64px);
-  margin-bottom: 32px;
-  margin-left: -32px;
+  width: 100%;
+  margin-bottom: 16px;
+
+  @include min(576) {
+    width: calc(100% + 64px);
+    margin-bottom: 32px;
+    margin-left: -32px;
+  }
 }
 
 .sign-up-form__tab-button {
   width: 50%;
-  padding: 18px;
+  padding: 15px 10px 12px 10px;
   cursor: pointer;
+  user-select: none;
   transition: .5s;
   white-space: nowrap;
-  border: none;
+  border: 1px solid #e8e8e8;
   outline: none !important;
   background-color: transparent;
+
+  @include min(576) {
+    padding: 18px;
+  }
+;
 
   &:first-child {
     border-radius: 25px 0 0 0 !important;
   }
 
   &:last-child {
+    border-left: none;
     border-radius: 0 25px 0 0 !important;
   }
 
   &.active {
+    pointer-events: none;
     background-color: #d2d2d2;
   }
 }
