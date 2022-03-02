@@ -1,0 +1,40 @@
+.page-header__time {
+  display: flex;
+
+  span {
+    padding-left: 5px;
+    user-select: none;
+    white-space: nowrap;
+  }
+}
+
+.person-card-rating__filter {
+  background-color: #fffaec;
+}
+
+.click-rating__title {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  color: #000;
+
+  @include min(767) {
+    margin-bottom: 16px;
+  }
+}
+
+.click-rating__textarea {
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  max-width: 552px;
+  height: 96px;
+  margin-bottom: 16px;
+  padding: 12px 20px;
+  resize: none;
+  border: 1px solid #d4d4d4;
+  border-radius: 24px !important;
+  background-color: #fff;
+
+  @include placeholder-color(#ccc);
+}
