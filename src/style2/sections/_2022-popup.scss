@@ -1,0 +1,161 @@
+.popup__layer {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  opacity: .4;
+  background-color: #4a4a4a;
+}
+
+.popup {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  max-height: 100vh;
+  padding: 32px 16px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+
+  @include min(767) {
+    width: 80%;
+    max-width: 552px;
+    max-height: 95vh;
+    padding: 32px;
+    border-radius: 24px;
+  }
+}
+
+.popup__close {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform .5s;
+
+  will-change: transform;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+
+  svg {
+    fill: #1e1e1e;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.popup-review {
+  .profile-person__rating {
+    flex: none;
+    width: 80px;
+    margin-bottom: 0;
+    padding-top: 5px;
+    pointer-events: none;
+
+    @include min(575) {
+      width: 101px;
+      margin-left: 16px;
+      padding-top: 0;
+    }
+  }
+
+  .rating-star {
+    display: block !important;
+  }
+
+  .person-card-rating__value {
+    display: none !important;
+  }
+}
+
+.popup__header {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.popup__title {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 43px;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.popup-review__item {
+  border-bottom: 1px solid #ebebeb;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.popup-review__row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.popup-review__icon {
+  flex: none;
+  width: 72px;
+  margin-right: 16px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.popup-review__row-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  @include min(575) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.popup-review__info {
+  margin-right: auto;
+}
+
+.popup-review__info-title {
+  font-size: 20px;
+  color: #000;
+
+  @include min(575) {
+    font-size: 24px;
+  }
+}
+
+.popup-review__info-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  margin-bottom: 0;
+}
+
+.popup-review__descr {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  margin-bottom: 16px;
+}

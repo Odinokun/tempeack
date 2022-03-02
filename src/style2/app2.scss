@@ -1,9 +1,13 @@
 @import "../style/core/variables";
 @import "../style/core/mixins";
 
-@import 'files/search-result';
 
-@import "files/2022-pricing";
-@import "files/2022-footer-lg-with-apps";
-@import "files/2022-login";
-@import "files/2022-form";
+//pages
+@import 'pages/2022-search-result';
+@import "pages/2022-pricing";
+@import "pages/2022-footer-lg-with-apps";
+@import "pages/2022-login";
+@import "pages/2022-form";
+
+//sections
+@import "sections/2022-popup";
