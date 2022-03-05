@@ -1,0 +1,9 @@
+.button--light-grey {
+  color: #000;
+  background-color: #f7f7f7;
+
+  &:hover {
+    color: #000;
+    background-color: darken(#f7f7f7, 10%);
+  }
+}

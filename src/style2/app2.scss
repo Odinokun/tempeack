@@ -1,6 +1,7 @@
 @import "../style/core/variables";
 @import "../style/core/mixins";
 
+@import "../style2/core/2022-main";
 
 //pages
 @import 'pages/2022-search-result';
@@ -9,6 +10,7 @@
 @import "pages/2022-login";
 @import "pages/2022-form";
 @import "pages/2022-request-person";
+@import "pages/2022-edit-profile";
 
 //sections
 @import "sections/2022-popup";
