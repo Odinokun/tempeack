@@ -1,17 +1,17 @@
 extends ../_template
 
 block variables
-  - var title       = 'Edit Profile | Tempeak'
-  - var description = 'Edit Profile | Tempeak'
-  - var ogtitle     = 'Edit Profile | Tempeak'
-  - var ogimage     = 'assets/img/social.jpg'
+  - let title       = 'Edit Profile | Tempeak'
+  - let description = 'Edit Profile | Tempeak'
+  - let ogtitle     = 'Edit Profile | Tempeak'
+  - let ogimage     = 'assets/img/social.jpg'
 
-  - var pageHeaderTitle = 'Edit Profile'
+  - let pageHeaderTitle = 'Edit Profile'
 
 block content
   .main-wrap
     include ../sections/header-profile
-    include ../sections/page-header-arr-menu-del
+    include ../sections/page-header-arr
 
     //begin content
     main.main.edit-b-profile

@@ -1,0 +1,186 @@
+extends ../_template
+
+block variables
+  - let title       = 'Edit Profile | Tempeak'
+  - let description = 'Edit Profile | Tempeak'
+  - let ogtitle     = 'Edit Profile | Tempeak'
+  - let ogimage     = 'assets/img/social.jpg'
+
+  - let pageHeaderTitle = 'Profile'
+
+block content
+  .main-wrap
+    include ../sections/header-profile
+    include ../sections/page-header-arr-menu-settings
+
+    //begin content
+    main.main.edit-b-profile
+      .container.container-inn.container-inn--sm
+        form.edit-b-profile__form
+          //- begin edit-b-profile__row
+          .edit-b-profile__row
+            //- begin edit-b-profile__item--logo
+            .edit-b-profile__item.edit-b-profile__item--logo
+              .edit-b-profile__logo
+                img(src="assets/img/clinic-logo.jpg" alt="logo")
+              .edit-b-profile__logo-title Business Logo
+            //- end   edit-b-profile__item--logo
+
+            .edit-b-profile__item
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-building
+                    use(xlink:href="assets/img/sprite.svg#building")
+                input.form-control(type='text' placeholder='Business Name')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-person
+                    use(xlink:href="assets/img/sprite.svg#person")
+                input.form-control(type='text' placeholder='First Name')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-person
+                    use(xlink:href="assets/img/sprite.svg#person")
+                input.form-control(type='text' placeholder='Last Name')
+              //end form-group
+          //- end   edit-b-profile__row
+
+          //- begin edit-b-profile__row
+          //.edit-b-profile__row.edit-b-profile__row--reverse
+          .edit-b-profile__grid
+            //- begin edit-b-profile__item--schedule
+            .edit-b-profile__item.edit-b-profile__item--schedule
+              .edit-b-profile__item-title Office hours
+              include ../elements/slider-range-list
+            //- end edit-b-profile__item--schedule
+
+            //.edit-b-profile__item-wrap
+            .edit-b-profile__item.edit-b-profile__item--fields
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-cake
+                    use(xlink:href="assets/img/sprite.svg#cake")
+                input.form-control(type='text' placeholder='Birthday')
+              //end form-group
+
+              .edit-b-profile__form-row
+                //begin form-group
+                .form-group.form-group--select
+                  .form-group__icon
+                    svg.svg-marker
+                      use(xlink:href="assets/img/sprite.svg#marker")
+                  select.form-control.selectpicker
+                    option(value='') State
+                    option(value='') State 1
+                    option(value='') State 2
+                    option(value='') State 3
+                //end form-group
+
+                //begin form-group
+                .form-group.form-group--select
+                  .form-group__icon
+                    svg.svg-marker
+                      use(xlink:href="assets/img/sprite.svg#marker")
+                  select.form-control.selectpicker
+                    option(value='') City
+                    option(value='') City 1
+                    option(value='') City 2
+                    option(value='') City 3
+                //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-marker
+                    use(xlink:href="assets/img/sprite.svg#marker")
+                input.form-control(type='text' placeholder='Address')
+              //end form-group
+
+              .edit-b-profile__form-row
+                //begin form-group
+                .form-group.form-group--input
+                  .form-group__icon
+                    svg.svg-email-open
+                      use(xlink:href="assets/img/sprite.svg#email-open")
+                  input.form-control(type='text' placeholder='Zip Code')
+                //end form-group
+
+                //begin form-group
+                .form-group.form-group--input
+                  .form-group__icon
+                    svg.svg-phone
+                      use(xlink:href="assets/img/sprite.svg#phone")
+                  input.form-control(type='text' placeholder='Phone')
+                //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-email
+                    use(xlink:href="assets/img/sprite.svg#email")
+                input.form-control(type='email' placeholder='Email Address')
+              //end form-group
+
+              .edit-b-profile__form-row
+                //begin form-group
+                .form-group.form-group--input
+                  .form-group__icon
+                    svg.svg-earth
+                      use(xlink:href="assets/img/sprite.svg#earth")
+                  input.form-control(type='text' placeholder='Website')
+                //end form-group
+
+                //begin form-group
+                .form-group.form-group--input
+                  .form-group__icon
+                    svg.svg-shield
+                      use(xlink:href="assets/img/sprite.svg#shield")
+                  input.form-control(type='text' placeholder='License Number')
+                //end form-group
+
+
+
+            .edit-b-profile__item.edit-b-profile__subscr
+              .edit-b-profile__subscr-item
+                span Pick
+                span subscription
+              //.edit-b-profile__subscr-tabs
+              label.edit-b-profile__subscr-tab
+                input(type="radio" name="subscr-tab")
+                .edit-b-profile__subscr-tab-inn
+                  span 3 months
+                  span $99.99
+                  span per month
+              label.edit-b-profile__subscr-tab
+                input(type="radio" name="subscr-tab")
+                .edit-b-profile__subscr-tab-inn
+                  span 6 months
+                  span $89.99
+                  span per month
+              label.edit-b-profile__subscr-tab
+                input(type="radio" name="subscr-tab" checked)
+                .edit-b-profile__subscr-tab-inn
+                  span 12 months
+                  span $79.99
+                  span per month
+
+
+          //- end edit-b-profile__row
+
+          //- begin edit-b-profile__row
+          .edit-b-profile__row.edit-b-profile__row--reverse
+            .edit-b-profile__btns.edit-b-profile__btns--left
+            .edit-b-profile__btns.edit-b-profile__btns--right
+              button.button.button--highlight.button--lg Save
+    //end content
+
+    include ../sections/footer-lg
+    include ../sections/scripts

@@ -1,11 +1,40 @@
+.page-header-menu__button {
+  & > span {
+    font-size: 16px;
+    line-height: 21px;
+    padding-right: 10px;
+    color: #000;
+  }
+}
+
 .edit-b-profile__form {
   margin-bottom: 0;
+  padding-top: 16px;
 
   @include min(768) {
     margin-bottom: 80px;
   }
   @include max(980) {
     padding-top: 24px;
+  }
+
+  .slider-range__list {
+    margin-bottom: 0;
+  }
+}
+
+.edit-b-profile__form-row {
+  @include min(768) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    width: 100%;
+
+    @include min(768) {
+      width: calc(50% - 12px);
+    }
   }
 }
 
@@ -27,6 +56,43 @@
   }
 }
 
+
+.edit-b-profile__grid {
+  display: grid;
+
+  grid-template-areas: 'fields' 'schedule' 'subscr';
+  @include min(768) {
+    grid-template-areas: 'schedule fields'
+    'schedule subscr';
+  }
+}
+
+.edit-b-profile__item--schedule {
+  grid-area: schedule;
+}
+
+.edit-b-profile__item--fields {
+  grid-area: fields;
+}
+
+.edit-b-profile__subscr {
+  grid-area: subscr;
+}
+
+.edit-b-profile__item-wrap {
+  display: flex;
+  flex-direction: column;
+
+  .edit-b-profile__item {
+    width: 100% !important;
+    margin-right: 0 !important;
+
+    &:last-child {
+      flex-grow: 1;
+    }
+  }
+}
+
 .edit-b-profile__item {
   width: 100%;
   margin-bottom: 24px;
@@ -44,7 +110,7 @@
     }
   }
 
-  .form-group {
+  & > .form-group {
     &:last-child {
       margin-bottom: 0;
     }
@@ -103,6 +169,107 @@
   }
 }
 
+.edit-b-profile__subscr {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  padding: 0;
+
+  @include min(992) {
+    flex-wrap: nowrap;
+  }
+}
+
+.edit-b-profile__subscr-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 24px;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  border-radius: 25px;
+  background-color: #f7f7f7;
+
+  @include min(992) {
+    width: 25%;
+    margin-right: 16px;
+    border-bottom: none;
+  }
+
+  span {
+    &:first-child {
+      font-size: 28px;
+      font-weight: 500;
+      color: #000;
+    }
+
+    &:last-child {
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}
+
+.edit-b-profile__subscr-tab {
+  position: relative;
+  display: flex;
+  width: 50%;
+
+  @include min(992) {
+    width: 25%;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+  }
+}
+
+.edit-b-profile__subscr-tab input:checked + .edit-b-profile__subscr-tab-inn {
+  pointer-events: none;
+
+  span {
+    color: #7ebf34;
+  }
+}
+
+.edit-b-profile__subscr-tab-inn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+  cursor: pointer;
+
+  span {
+    font-weight: normal;
+    user-select: none;
+    transition: .5s;
+    color: #000;
+
+    &:nth-child(1) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &:nth-child(2) {
+      font-size: 28px;
+      line-height: 37px;
+    }
+
+    &:nth-child(3) {
+      font-size: 12px;
+      line-height: 16px;
+      opacity: .7;
+    }
+  }
+}
+
+
 .edit-b-profile__btns--right {
   display: flex;
   flex-direction: column;
@@ -118,6 +285,10 @@
 
     @include min(768) {
       width: calc(50% - 12px);
+    }
+
+    &:last-child {
+      margin-left: auto;
     }
   }
 }
