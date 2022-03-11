@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function () {
 
   // begin slider-range
   $(function () {
@@ -17,15 +17,27 @@ module.exports = function() {
         values: [0, finishVal],
         slide: function (event, ui) {
           //значение inputs при перемещении ползунков
-          if (ui.values[1] < 10) {
+          if (ui.values[1] < 10 && ui.values[1] !== 0) {
             ui.values[1] = '0' + ui.values[1];
           }
           $(sliderInputFinish).val(ui.values[1]);
+
+          if (ui.values[1] < 3) {
+            $(slider).addClass('minval')
+          } else {
+            $(slider).removeClass('minval')
+          }
         }
       });
 
       //значение при загрузке (right input)
-      if ($(slider).slider("values", 1) < 10) {
+      if ($(slider).slider("values", 1) < 3) {
+        $(slider).addClass('minval')
+      } else {
+        $(slider).removeClass('minval')
+      }
+
+      if ($(slider).slider("values", 1) < 10 && $(slider).slider("values", 1) !== 0) {
         $(sliderInputFinish).val("0" + $(slider).slider("values", 1));
       } else {
         $(sliderInputFinish).val($(slider).slider("values", 1));

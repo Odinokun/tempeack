@@ -6,12 +6,12 @@ block variables
   - let ogtitle     = 'Edit Profile | Tempeak'
   - let ogimage     = 'assets/img/social.jpg'
 
-  - let pageHeaderTitle = 'Profile'
+  - let pageHeaderTitle = 'Edit Profile'
 
 block content
   .main-wrap
     include ../sections/header-profile
-    include ../sections/page-header-arr-menu-settings
+    include ../sections/page-header-arr
 
     //begin content
     main.main.edit-b-profile
@@ -22,19 +22,11 @@ block content
             //- begin edit-b-profile__item--logo
             .edit-b-profile__item.edit-b-profile__item--logo
               .edit-b-profile__logo
-                img(src="assets/img/clinic-logo.jpg" alt="logo")
-              .edit-b-profile__logo-title Business Logo
+                img(src="assets/img/person-logo.jpg" alt="logo")
+              .edit-b-profile__logo-title Your Photo
             //- end   edit-b-profile__item--logo
 
-            .edit-b-profile__item
-              //begin form-group
-              .form-group.form-group--input
-                .form-group__icon
-                  svg.svg-building
-                    use(xlink:href="assets/img/sprite.svg#building")
-                input.form-control(type='text' placeholder='Business Name')
-              //end form-group
-
+            .edit-b-profile__item.edit-b-profile__item--center
               //begin form-group
               .form-group.form-group--input
                 .form-group__icon
@@ -52,24 +44,54 @@ block content
               //end form-group
           //- end   edit-b-profile__row
 
-          //- begin edit-b-profile__row
-          .edit-b-profile__grid
-            //- begin edit-b-profile__item--schedule
-            .edit-b-profile__item.edit-b-profile__item--schedule
-              .edit-b-profile__item-title Office hours
-              include ../elements/slider-range-list
-            //- end edit-b-profile__item--schedule
 
-            //.edit-b-profile__item-wrap
-            .edit-b-profile__item.edit-b-profile__item--fields
+          //- begin edit-b-profile__row
+          .edit-b-profile__row.edit-b-profile__row--reverse
+            .edit-b-profile__item
               //begin form-group
               .form-group.form-group--input
                 .form-group__icon
-                  svg.svg-cake
-                    use(xlink:href="assets/img/sprite.svg#cake")
-                input.form-control(type='text' placeholder='Birthday')
+                  svg.svg-clock
+                    use(xlink:href="assets/img/sprite.svg#clock")
+                input.form-control(type='text' placeholder='Experience')
               //end form-group
 
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-car
+                    use(xlink:href="assets/img/sprite.svg#car")
+                input.form-control(type='text' placeholder='Miles Available to Commute')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input
+                .form-group__icon
+                  svg.svg-shield
+                    use(xlink:href="assets/img/sprite.svg#shield")
+                input.form-control(type='text' placeholder='License Number')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input.form-group--input-file
+                .form-group__icon
+                  svg.svg-shield
+                    use(xlink:href="assets/img/sprite.svg#shield")
+                span.form-group__text Upload License
+                input.form-control(type='file')
+              //end form-group
+
+              //begin form-group
+              .form-group.form-group--input.form-group--input-file
+                .form-group__icon
+                  svg.svg-list
+                    use(xlink:href="assets/img/sprite.svg#list")
+                span.form-group__text Upload Resume
+                input.form-control(type='file')
+              //end form-group
+
+
+            .edit-b-profile__item
               .edit-b-profile__form-row
                 //begin form-group
                 .form-group.form-group--select
@@ -82,7 +104,6 @@ block content
                     option(value='') State 2
                     option(value='') State 3
                 //end form-group
-
                 //begin form-group
                 .form-group.form-group--select
                   .form-group__icon
@@ -94,6 +115,7 @@ block content
                     option(value='') City 2
                     option(value='') City 3
                 //end form-group
+
 
               //begin form-group
               .form-group.form-group--input
@@ -120,61 +142,65 @@ block content
                   input.form-control(type='text' placeholder='Phone')
                 //end form-group
 
-              //begin form-group
-              .form-group.form-group--input
-                .form-group__icon
-                  svg.svg-email
-                    use(xlink:href="assets/img/sprite.svg#email")
-                input.form-control(type='email' placeholder='Email Address')
-              //end form-group
 
               .edit-b-profile__form-row
                 //begin form-group
                 .form-group.form-group--input
                   .form-group__icon
-                    svg.svg-earth
-                      use(xlink:href="assets/img/sprite.svg#earth")
-                  input.form-control(type='text' placeholder='Website')
+                    svg.svg-email
+                      use(xlink:href="assets/img/sprite.svg#email")
+                  input.form-control(type='email' placeholder='Email Address')
                 //end form-group
-
                 //begin form-group
                 .form-group.form-group--input
                   .form-group__icon
-                    svg.svg-shield
-                      use(xlink:href="assets/img/sprite.svg#shield")
-                  input.form-control(type='text' placeholder='License Number')
+                    svg.svg-cake
+                      use(xlink:href="assets/img/sprite.svg#cake")
+                  input.form-control(type='text' placeholder='Birthday')
                 //end form-group
 
 
 
-            .edit-b-profile__item.edit-b-profile__subscr
-              .edit-b-profile__subscr-item
-                span Pick
-                span subscription
-              label.edit-b-profile__subscr-tab
-                input(type="radio" name="subscr-tab")
-                .edit-b-profile__subscr-tab-inn
-                  span 3 months
-                  span $99.99
-                  span per month
-              label.edit-b-profile__subscr-tab
-                input(type="radio" name="subscr-tab")
-                .edit-b-profile__subscr-tab-inn
-                  span 6 months
-                  span $89.99
-                  span per month
-              label.edit-b-profile__subscr-tab
-                input(type="radio" name="subscr-tab" checked)
-                .edit-b-profile__subscr-tab-inn
-                  span 12 months
-                  span $79.99
-                  span per month
+              .edit-b-profile__form-row
+                //begin form-group
+                .form-group.form-group--input
+                  .form-group__icon
+                    svg.svg-hat
+                      use(xlink:href="assets/img/sprite.svg#hat")
+                  input.form-control(type='text' placeholder='What School You Attend')
+                //end form-group
+                //begin form-group
+                .form-group.form-group--input
+                  .form-group__icon
+                    svg.svg-calendar
+                      use(xlink:href="assets/img/sprite.svg#calendar")
+                  input.form-control(type='text' placeholder='Date of Graduation')
+                //end form-group
+          //- end   edit-b-profile__row
+
+          //- begin edit-b-profile__row
+          .edit-b-profile__row
+            //- begin edit-b-profile__item--schedule
+            .edit-b-profile__item.edit-b-profile__item--schedule
+              .edit-b-profile__item-title Working days
+              include ../elements/slider-range-list
+            //- end edit-b-profile__item--schedule
+
+            .edit-b-profile__item
+              h3.sign-up-lg-form__title Salary (hourly) rate if request till appointment
+
+              //begin sign-up-lg-form__salary
+              .sign-up-lg-form__salary
+                include ../elements/slider-range-single-list
+              //end sign-up-lg-form__salary
           //- end edit-b-profile__row
 
           //- begin edit-b-profile__row
           .edit-b-profile__row.edit-b-profile__row--reverse
             .edit-b-profile__btns.edit-b-profile__btns--left
+              button.button.button--light-grey.button--lg Delete profile
             .edit-b-profile__btns.edit-b-profile__btns--right
+              button.button.button--grey.button--lg Cancel
               button.button.button--highlight.button--lg Save
     //end content
 
