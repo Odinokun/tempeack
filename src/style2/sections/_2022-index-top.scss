@@ -1,0 +1,23 @@
+.index-top {
+  min-height: 600px;
+
+  @include max(980) {
+    min-height: 500px;
+  }
+
+  &::before {
+    top: -100px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: 1260px;
+    max-width: 50%;
+    height: 1260px;
+    background-image: url('../img/bg-index-top.svg');
+    background-position: 0 0;
+
+    @include max(980) {
+      background-image: none;
+    }
+  }
+}

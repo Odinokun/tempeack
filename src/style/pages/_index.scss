@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &::before {
     position: absolute;
     top: 0;
@@ -84,6 +85,7 @@
     max-width: 360px;
     padding-top: 16px;
   }
+
   p {
     font-size: 16px;
     line-height: 24px;
@@ -117,13 +119,16 @@
   @include max(980) {
     color: $link;
   }
+
   &:hover {
     color: #000;
     background-color: transparent;
+
     svg {
       fill: #000;
     }
   }
+
   svg {
     fill: #fff;
     width: 7px;

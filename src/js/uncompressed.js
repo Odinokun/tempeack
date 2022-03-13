@@ -5,6 +5,8 @@
 
 $(document).ready(function ($) {
   pageWidget([
+    '2022-index',
+    '2022-edit-b-profile-4',
     '2022-edit-b-profile-3',
     '2022-edit-b-profile-2',
     '2022-edit-b-profile',

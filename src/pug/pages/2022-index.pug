@@ -1,0 +1,23 @@
+extends ../_template
+
+block variables
+  - var title       = 'Tempeak'
+  - var description = 'Tempeak'
+  - var ogtitle     = 'Tempeak'
+  - var ogimage     = 'assets/img/social.jpg'
+
+  - var pageHeaderTitle = 'Let\'s Find'
+
+block content
+  .main-wrap
+    include ../sections/header
+
+    //begin content
+    main.main
+      include ../sections/index-top
+      include ../sections/index-about
+      include ../sections/index-download
+    //end content
+
+    include ../sections/footer-lg-with-apps
+    include ../sections/scripts

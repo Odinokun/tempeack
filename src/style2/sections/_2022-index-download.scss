@@ -1,0 +1,125 @@
+.index-download {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -72px;
+  padding-bottom: 72px;
+
+  @include max(767) {
+    margin-bottom: -170px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 2000px;
+    height: 2000px;
+    content: '';
+    transform: translateX(50%);
+    background-image: url('../img/bg-index-download.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50px;
+
+    @include max(767) {
+      right: -380px;
+      transform: translateX(0%);
+    }
+  }
+
+  .container-inn {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 966px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    @include max(575) {
+      width: calc(100% + 150px);
+      margin-left: -150px;
+    }
+  }
+}
+
+.index-download__img {
+  width: 38%;
+
+  @include max(575) {
+    flex: none;
+    width: 300px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.index-download__right {
+  width: 59%;
+
+  @include max(575) {
+    width: 100%;
+    margin-left: -20px;
+  }
+}
+
+.index-download__title {
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 0;
+
+  @include max(980) {
+    font-size: 44px;
+  }
+  @include max(575) {
+    font-size: 40px;
+  }
+}
+
+.index-download__subtitle {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 32px;
+
+  @include max(980) {
+    font-size: 32px;
+  }
+  @include max(575) {
+    font-size: 30px;
+  }
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.index-download__text {
+  margin-bottom: 32px;
+}
+
+.index-download__links {
+  display: flex;
+
+  @include max(575) {
+    flex-direction: column;
+  }
+
+  a {
+    display: block;
+    margin-right: 24px;
+    margin-bottom: 16px;
+
+    @include max(575) {
+      max-width: 130px;
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
