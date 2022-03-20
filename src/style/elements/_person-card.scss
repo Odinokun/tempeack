@@ -25,6 +25,7 @@
     width: 60px;
     height: 60px;
   }
+
   img {
     display: block;
     width: 100%;
@@ -132,11 +133,13 @@
     width: 13px;
     height: 13px;
   }
+
   &:nth-child(n + 2) {
     @include max(575) {
       display: none !important;
     }
   }
+
   &:last-child {
     margin-right: 0;
   }
@@ -165,6 +168,7 @@
   @include max(575) {
     padding-left: 10px;
   }
+
   .person-card-salary__text,
   .person-card-salary__value,
   .person-card-experience__text,
@@ -177,12 +181,14 @@
       font-size: 13px;
     }
   }
+
   .person-card-salary__text,
   .person-card-experience__text {
     @include max(575) {
       display: none;
     }
   }
+
   i {
     font-weight: 600;
     font-style: normal;
@@ -193,10 +199,12 @@
       font-size: 13px;
     }
   }
+
   svg {
     fill: #4a4a4a;
     margin: 0 5px 0 8px;
   }
+
   .svg-clock {
     @include max(980) {
       width: 13px;
@@ -219,6 +227,7 @@
       padding: 0;
       border-radius: 50% !important;
     }
+
     span {
       font-size: 20px;
 
@@ -226,6 +235,7 @@
         display: none;
       }
     }
+
     svg {
       flex: none;
       fill: #fff;
@@ -251,6 +261,7 @@
       min-height: 0;
       padding: 0;
     }
+
     svg {
       width: 18px;
       height: 14px;
@@ -274,6 +285,7 @@
       min-height: 0;
       padding: 0;
     }
+
     svg {
       margin-left: auto;
 
@@ -282,51 +294,66 @@
       }
     }
   }
+
   .button--waiting {
     background-color: #4a4a4a;
+
     &:hover {
       background-color: lighten(#4a4a4a, 10%);
     }
+
     svg {
       width: 9px;
       height: 15px;
     }
   }
+
   .button--accepted {
     background-color: #ffbd06;
+
     &:hover {
       background-color: lighten(#ffbd06, 10%);
     }
+
     svg {
       width: 18px;
       height: 14px;
     }
   }
+
   .button--completed {
     background-color: #7ebf34;
+
     &:hover {
       background-color: lighten(#7ebf34, 10%);
     }
+
     svg {
       width: 18px;
       height: 14px;
     }
   }
+
   .button--declined {
     background-color: #d84b1f;
+
     &:hover {
       background-color: lighten(#d84b1f, 10%);
     }
+
     svg {
       width: 15px;
       height: 15px;
     }
   }
+
   .button--canceled {
     background-color: #d84b1f;
+
     &:hover {
       background-color: lighten(#d84b1f, 10%);
     }
+
     svg {
       width: 19px;
       height: 17px;
@@ -357,6 +384,7 @@
   max-width: 360px;
   height: 48px;
   background-color: #d84b1f;
+
   &:hover {
     background-color: lighten(#d84b1f, 10%);
   }

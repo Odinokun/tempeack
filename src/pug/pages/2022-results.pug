@@ -1,0 +1,23 @@
+extends ../_template
+
+block variables
+  - let title       = 'Results | Tempeak'
+  - let description = 'Results | Tempeak'
+  - let ogtitle     = 'Results | Tempeak'
+  - let ogimage     = 'assets/img/social.jpg'
+
+  - let pageHeaderTitle = 'Results'
+
+block content
+  .main-wrap
+    include ../sections/header
+    include ../sections/page-header-arr-result
+
+    //begin content
+    main.main.results
+      .container.container-inn.container-inn--sm
+        include ../elements/2022-person-card-02
+    //end content
+
+    include ../sections/footer
+    include ../sections/scripts

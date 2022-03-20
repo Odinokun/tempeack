@@ -1,5 +1,10 @@
 .index-about {
   position: relative;
+  @include max(980) {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .container-inn {
     max-width: 966px;

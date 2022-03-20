@@ -1,0 +1,17 @@
+//begin header
+header.header
+  .container.container-inn
+    a(href="/").header__logo
+      img(src="assets/img/logo.svg" alt="Tempeak")
+
+    //begin header__profile-menu
+    .header__profile-menu.header-profile-menu
+      a(href="#").header-profile-menu__link
+        span Requests
+        +svg('send')
+    //end header__profile-menu
+
+    button.button.button--profile
+      +svg('person')
+      span Profile
+//end header

@@ -4,6 +4,7 @@
   margin-bottom: -72px;
   padding-bottom: 72px;
 
+
   @include max(767) {
     margin-bottom: -170px;
   }
@@ -34,6 +35,11 @@
     max-width: 966px;
     padding-top: 50px;
     padding-bottom: 70px;
+    @include max(980) {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     @include max(575) {
       width: calc(100% + 150px);

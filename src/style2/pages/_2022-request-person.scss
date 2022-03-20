@@ -8,8 +8,10 @@
   }
 }
 
-.person-card-rating__filter {
-  background-color: #fffaec;
+.request__click-rating {
+  .person-card-rating__filter {
+    background-color: #fffaec;
+  }
 }
 
 .click-rating__title {
@@ -37,4 +39,64 @@
   background-color: #fff;
 
   @include placeholder-color(#ccc);
+}
+
+.person-card__info-row {
+  position: relative;
+  padding-bottom: 30px;
+
+  @include max(576) {
+    padding-bottom: 0;
+  }
+}
+
+.person-card-experience__value {
+  span {
+    display: none;
+
+    @include min(575) {
+      display: inline;
+    }
+  }
+}
+
+.person-card-time {
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  white-space: nowrap;
+
+  @include max(980) {
+    font-size: 13px;
+  }
+  @include max(576) {
+    position: static;
+    padding-left: 15px;
+  }
+}
+
+.requests-day__separator {
+  @include max(576) {
+    justify-content: flex-start;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    padding-left: 16px;
+  }
+}
+
+.person-card__button {
+  @include max(576) {
+    position: absolute;
+    top: 28px;
+    right: 0;
+  }
+}
+
+.person-card {
+  @include max(576) {
+    position: relative;
+  }
 }

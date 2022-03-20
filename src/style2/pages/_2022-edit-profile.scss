@@ -428,7 +428,7 @@
 
 .edit-b-profile__btns--right {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 
   @include min(768) {
     flex-direction: row;

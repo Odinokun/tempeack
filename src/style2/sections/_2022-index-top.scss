@@ -3,6 +3,9 @@
 
   @include max(980) {
     min-height: 500px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &::before {
@@ -18,6 +21,13 @@
 
     @include max(980) {
       background-image: none;
+    }
+  }
+  .index-left,
+  .index-right,
+  .index-left-form  {
+    @include max(980) {
+    max-width: 100%;
     }
   }
 }

@@ -1,0 +1,73 @@
+// begin page-header
+header.page-header.page-header--arr.page-header--search-result
+  .container.container-inn
+    a.page-header__back(href='#')
+      svg
+        use(xlink:href='assets/img/sprite.svg#page-header-arrow')
+    h2.page-header__title Results
+    .search-result
+      .search-result__header
+        .search-result__icon-settings
+          svg
+            use(xlink:href='assets/img/sprite.svg#settings')
+        h2.search-result__title Filter
+        .search-result__icon-arrow
+          svg
+            use(xlink:href='assets/img/sprite.svg#arr-right')
+      .search-result__list
+        //begin form-group
+        .form-group.form-group--select
+          .form-group__icon
+            svg.svg-hospital
+              use(xlink:href="assets/img/sprite.svg#hospital")
+          select.form-control.selectpicker
+            option(value='') Clinical Staff
+            option(value='') Clinical Staff 1
+            option(value='') Clinical Staff 2
+            option(value='') Clinical Staff 3
+        //end form-group
+
+        //begin form-group
+        .form-group.form-group--select
+          .form-group__icon
+            svg.svg-hospital
+              use(xlink:href="assets/img/sprite.svg#hospital")
+          select.form-control.selectpicker
+            option(value='') Speciality
+            option(value='') Speciality 1
+            option(value='') Speciality 2
+            option(value='') Speciality 3
+        //end form-group
+
+        //begin form-group
+        .form-group.form-group--select
+          .form-group__icon
+            svg.svg-marker
+              use(xlink:href="assets/img/sprite.svg#marker")
+          select.form-control.selectpicker
+            option(value='') State
+            option(value='') State 1
+            option(value='') State 2
+            option(value='') State 3
+        //end form-group
+
+        //begin form-group
+        .form-group.form-group--input
+          .form-group__icon
+            svg.svg-calendar
+              use(xlink:href="assets/img/sprite.svg#calendar-2")
+          input.form-control(type='text' placeholder='Date')
+        //end form-group
+
+        //begin form-group
+        .form-group.form-group--input
+          .form-group__icon
+            svg.svg-clock
+              use(xlink:href="assets/img/sprite.svg#clock")
+          input.form-control(type='text' placeholder='Time')
+        //end form-group
+        button.button.button--highlight.button--lg Filter
+    .search-result__open
+      svg
+        use(xlink:href='assets/img/sprite.svg#settings')
+// end page-header

@@ -1,0 +1,178 @@
+.page-header--search-result {
+  z-index: 2;
+
+  .form-control {
+    height: 40px;
+    padding-right: 25px;
+    padding-left: 35px;
+  }
+
+  .form-group--select::before {
+    right: 10px;
+  }
+
+  .form-group__icon {
+    left: 7px;
+  }
+}
+
+.search-result {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px;
+  transition: .5s;
+  transform: translateX(130vw);
+  background-color: #fff;
+
+  @include min(576) {
+    padding: 32px;
+  }
+  @include min(992) {
+    position: relative;
+    min-height: 0;
+    padding: 0 0 0 48px;
+    transform: translateX(0);
+    background-color: transparent;
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.search-result__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 32px;
+
+  @include min(992) {
+    display: none;
+    margin-bottom: 0;
+  }
+}
+
+.search-result__icon-settings {
+  flex: none;
+  margin-right: 16px;
+  padding: 8px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.search-result__title {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.search-result__icon-arrow {
+  flex: none;
+  margin-left: auto;
+  padding: 8px;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.search-result__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include min(992) {
+    flex-wrap: nowrap;
+  }
+
+  .form-group {
+    width: 100%;
+
+    @include min(992) {
+      width: 25%;
+      margin-bottom: 0;
+      margin-left: 16px;
+    }
+  }
+
+  .button {
+    @include min(992) {
+      display: none;
+    }
+  }
+}
+
+.search-result__open {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  padding: 8px;
+  cursor: pointer;
+
+  @include min(992) {
+    display: none;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.person-card__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.person-card__info-resume {
+  display: flex;
+  align-items: center;
+  flex: none;
+  padding: 10px 40px 0 20px;
+
+  @include max(980) {
+    padding: 0 40px 0 20px;
+  }
+  @include max(576) {
+    padding: 0 30px 0 15px;
+  }
+
+  svg {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+
+  span {
+    display: none;
+
+    @include min(575) {
+      font-size: 14px;
+      line-height: 1;
+      display: block;
+      padding-top: 1px;
+      color: #000;
+    }
+    @include max(980) {
+      font-size: 12px;
+    }
+  }
+}
