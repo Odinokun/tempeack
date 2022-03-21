@@ -1,5 +1,9 @@
 .page-header--search-result {
-  z-index: 2;
+  z-index: 1;
+
+  &.active {
+    z-index: 2;
+  }
 
   .form-control {
     height: 40px;
