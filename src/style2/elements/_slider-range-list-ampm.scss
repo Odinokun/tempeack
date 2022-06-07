@@ -1,0 +1,128 @@
+.slider-range-ampm {
+  position: relative;
+  margin-bottom: 16px;
+  padding-top: 5px;
+  list-style: none;
+
+  &.disabled {
+    .slider-range__input-wrap {
+      opacity: .6;
+    }
+
+    .slider-range__scale-ampm {
+      pointer-events: none;
+      opacity: .6;
+    }
+
+    .ui-slider-horizontal .ui-slider-range,
+    .ui-state-default,
+    .ui-widget-content .ui-state-default {
+      background-color: #d4d4d4;
+    }
+  }
+
+  .log-in-form__checkbox--check {
+    padding-top: 10px;
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      padding-left: 30px;
+    }
+  }
+}
+
+.slider-range__input-wrap-ampm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 8px;
+  pointer-events: none;
+
+  @include min(425) {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  span {
+    display: block;
+    width: 5px;
+    height: 1px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #000;
+  }
+}
+
+.slider-range__input-ampm {
+  font-size: 16px;
+  font-weight: 400;
+  flex: none;
+  width: 75px;
+  padding: 3px 0;
+  text-align: center;
+  color: #000;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid $link;
+  background-color: transparent;
+  border-left: none;
+  box-shadow: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    width: 75px;
+    height: 2px;
+    content: '';
+    background-color: $link;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+//begin #RANGE STYLE
+.slider-range-ampm {
+  .ui-widget.ui-widget-content {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #d4d4d4;
+  }
+
+  .ui-slider-horizontal .ui-slider-range {
+    top: -1px;
+    height: 4px;
+    border: none;
+    background-color: $link;
+  }
+
+  .ui-state-default,
+  .ui-widget-content .ui-state-default {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background-color: $link;
+  }
+}
+
+//end #RANGE STYLE
+.slider-range__scale-ampm {
+  margin-top: 18px;
+
+  span:nth-child(2) {
+    transform: translateX(8px);
+  }
+}
