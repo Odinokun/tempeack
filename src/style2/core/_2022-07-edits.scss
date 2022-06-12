@@ -1,3 +1,23 @@
 .footer {
   padding-bottom: 30px;
 }
+
+.profile-person-row__left,
+.profile-person-row__right {
+  overflow: hidden;
+}
+
+.profile-person__title,
+.profile-person__subtitle,
+.profile-person__contacts-link {
+  overflow: hidden;
+  max-width: 100%;
+  //white-space: nowrap;
+  text-overflow: ellipsis;
+
+  span {
+    overflow: hidden;
+    //white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
