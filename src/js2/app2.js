@@ -5,5 +5,6 @@ $(function() {
   require('./modules/popup')();
   require('./modules/search-result')();
   require('./modules/range-ampm')();
+  require('./modules/disabled-btn')();
 
 });
