@@ -73,3 +73,38 @@
     pointer-events: none;
   }
 }
+
+.edit-b-profile__item--logo {
+  position: relative;
+}
+
+.form-group.delete-file {
+  a {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 1px;
+      right: 8px;
+      width: 1px;
+      height: 16px;
+      content: '';
+      background-color: red;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
