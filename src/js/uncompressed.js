@@ -91,5 +91,3 @@ function pageWidget(pages) {
 // END Меню для навигации при разработке
 
 //====== Begin Programmer code ======
-
-
