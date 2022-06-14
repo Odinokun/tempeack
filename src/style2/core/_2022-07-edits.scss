@@ -28,6 +28,7 @@
   }
 }
 
+.person-card__ava,
 .person-card__ava--business,
 .person-card__ava--person {
   position: relative;
@@ -106,5 +107,64 @@
     &::after {
       transform: rotate(-45deg);
     }
+  }
+}
+
+.form-group--input-file {
+  transition: .5s;
+}
+
+.form-group--input-file.active {
+  margin-bottom: 32px;
+  color: $highlight;
+  border-color: $highlight;
+
+  &:last-child {
+    margin-bottom: 16px;
+  }
+
+  &::before {
+    background-image: url('../img/check.svg');
+  }
+
+  svg {
+    fill: $highlight;
+  }
+
+  .form-group__delete-file {
+    opacity: 1;
+  }
+}
+
+.form-group__delete-file {
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: .5s;
+  opacity: 0;
+  color: $highlight;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 12px;
+    margin: auto;
+    content: '';
+    background-color: $highlight;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
