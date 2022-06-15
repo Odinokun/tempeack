@@ -158,4 +158,11 @@
   font-weight: 300;
   line-height: 21px;
   margin-bottom: 16px;
+  p,
+  span {
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+  }
 }
