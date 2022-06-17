@@ -16,7 +16,8 @@
   top: 50%;
   left: 50%;
   display: none;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
   max-height: 100vh;
   padding: 32px 16px;
@@ -134,6 +135,8 @@
 }
 
 .popup-review__info {
+  overflow: hidden;
+  max-width: 280px;
   margin-right: auto;
 }
 
@@ -158,6 +161,7 @@
   font-weight: 300;
   line-height: 21px;
   margin-bottom: 16px;
+
   p,
   span {
     display: block;

@@ -9,6 +9,8 @@
   overflow: hidden;
 }
 
+.popup-review__info-title,
+.popup-review__info-subtitle,
 .profile-clinic__title,
 .profile-clinic__subtitle,
 .profile-clinic__contacts-link,
@@ -18,16 +20,16 @@
 .subscription-info__text {
   overflow: hidden;
   max-width: 100%;
-  //white-space: nowrap;
   text-overflow: ellipsis;
 
   span {
     overflow: hidden;
-    //white-space: nowrap;
     text-overflow: ellipsis;
   }
 }
 
+.profile-clinic__ava,
+.profile-person__ava,
 .profile-person-ava__pic,
 .profile-clinic-ava__pic,
 .person-card__ava,
@@ -64,11 +66,37 @@
   }
 }
 
+.profile-clinic__ava,
+.profile-person__ava {
+  &::before {
+    right: 13px;
+    bottom: 13px;
+    width: 20px;
+    height: 20px;
+
+    @include min(576) {
+      right: 26px;
+      bottom: 26px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+
 .person-card__ava-img {
   overflow: hidden;
   width: 100%;
   height: 100%;
   border-radius: 50%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-position: center;
+    object-fit: cover;
+  }
 }
 
 .button {
